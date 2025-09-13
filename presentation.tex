@@ -103,6 +103,39 @@
 \makeatletter
 \def\fps@figure{htbp}
 \makeatother
+% definitions for citeproc citations
+\NewDocumentCommand\citeproctext{}{}
+\NewDocumentCommand\citeproc{mm}{%
+  \begingroup\def\citeproctext{#2}\cite{#1}\endgroup}
+\makeatletter
+ % allow citations to break across lines
+ \let\@cite@ofmt\@firstofone
+ % avoid brackets around text for \cite:
+ \def\@biblabel#1{}
+ \def\@cite#1#2{{#1\if@tempswa , #2\fi}}
+\makeatother
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[2] % #1 hanging-indent, #2 entry-spacing
+ {\begin{list}{}{%
+  \setlength{\itemindent}{0pt}
+  \setlength{\leftmargin}{0pt}
+  \setlength{\parsep}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+   \setlength{\leftmargin}{\cslhangindent}
+   \setlength{\itemindent}{-1\cslhangindent}
+  \fi
+  % set entry spacing
+  \setlength{\itemsep}{#2\baselineskip}}}
+ {\end{list}}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{\hfill\break\parbox[t]{\linewidth}{\strut\ignorespaces#1\strut}}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
 
 \makeatletter
 \@ifpackageloaded{caption}{}{\usepackage{caption}}
@@ -154,26 +187,90 @@
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same} % disable monospaced font for URLs
 \hypersetup{
-  pdftitle={DATA480-STAT480 Workshop 2},
-  pdfauthor={Dr Alex Wang Alex.Wang@vuw.ac.nz},
+  pdftitle={Data Science Research on Social Data in Aotearoa},
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 
 
-\title{DATA480-STAT480 Workshop 2}
+\title{Data Science Research on Social Data in Aotearoa}
+\subtitle{Part 1: Privacy and Māori Data Sovereignty}
 \author{}
-\date{Invalid Date}
+\date{2025-09-13}
 \institute{DATA480-STAT480: Research Preparation}
 
 \begin{document}
 \frame{\titlepage}
 
 
+\section{---}\label{section}
+
+\section{title: ``DATA480-STAT480 Workshop
+2''}\label{title-data480-stat480-workshop-2}
+
+\section{subtitle: ``\,''}\label{subtitle}
+
+\section{author: \textbar{}}\label{author}
+
+\section{Dr Alex Wang}\label{dr-alex-wang}
+
+\section{Alex.Wang@vuw.ac.nz}\label{alex.wangvuw.ac.nz}
+
+\section{\texorpdfstring{date:
+``\texttt{r\ Sys.Date()}''}{date: ``r Sys.Date()''}}\label{date-r-sys.date}
+
+\section{institute: ``DATA480-STAT480: Research
+Preparation''}\label{institute-data480-stat480-research-preparation}
+
+\section{format:}\label{format}
+
+\section{html:}\label{html}
+
+\section{theme: cosmo}\label{theme-cosmo}
+
+\section{toc: true}\label{toc-true}
+
+\section{toc-depth: 2}\label{toc-depth-2}
+
+\section{number-sections: true}\label{number-sections-true}
+
+\section{code-fold: true}\label{code-fold-true}
+
+\section{code-summary: ``Click to show/hide
+code''}\label{code-summary-click-to-showhide-code}
+
+\section{code-line-numbers: true}\label{code-line-numbers-true}
+
+\section{fig-width: 6}\label{fig-width-6}
+
+\section{fig-height: 4}\label{fig-height-4}
+
+\section{fig-align: center}\label{fig-align-center}
+
+\section{css: styles/custom.css}\label{css-stylescustom.css}
+
+\section{\# pdf}\label{pdf}
+
+\section{\# documentclass: beamer}\label{documentclass-beamer}
+
+\section{\# latex-engine: pdflatex}\label{latex-engine-pdflatex}
+
+\section{fontsize: 12pt}\label{fontsize-12pt}
+
+\section{theme: ``Madrid''}\label{theme-madrid}
+
+\section{toc: true}\label{toc-true-1}
+
+\section{bibliography: bibli/refs.bib}\label{bibliography-biblirefs.bib}
+
+\section{link-citations: true \# Use clickable
+citations}\label{link-citations-true-use-clickable-citations}
+
+\section{---}\label{section-1}
+
 \section{Outline Slide}\label{outline-slide}
 
-\subsection{Outline}\label{outline}
-
 \begin{frame}{Outline}
+\phantomsection\label{outline}
 \begin{itemize}
 \tightlist
 \item
@@ -185,12 +282,263 @@
 \end{itemize}
 \end{frame}
 
-\section{Include the modules}\label{include-the-modules}
+\begin{frame}{Introduction}
+\phantomsection\label{introduction}
+\begin{itemize}
+\tightlist
+\item
+  Understanding privacy in New Zealand's data environment is critical
+  for research.
+\item
+  Māori data sovereignty ensures that Māori data is managed according to
+  tikanga and principles of Te Tiriti o Waitangi.
+\item
+  Objectives for this session:
 
-\begin{frame}{Include the modules}
-include: modules/01-privacy-maori.qmd include:
-modules/02-data-landscape.qmd include: modules/03-synthetic-xai.qmd
-include: modules/04-references.qmd
+  \begin{itemize}
+  \tightlist
+  \item
+    Review key privacy laws.
+  \item
+    Introduce Māori data sovereignty concepts.
+  \item
+    Discuss implications for social data research.
+  \end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Privacy Laws in Aotearoa}
+\phantomsection\label{privacy-laws-in-aotearoa}
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Privacy Act 2020}: Governs collection, storage, use, and
+  sharing of personal data.
+\item
+  Key principles:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Purpose limitation
+  \item
+    Data minimization
+  \item
+    Transparency and accountability
+  \item
+    Individual rights to access and correction
+  \end{itemize}
+\item
+  Enforcement through the Office of the Privacy Commissioner.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Māori Data Sovereignty}
+\phantomsection\label{mux101ori-data-sovereignty}
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Definition}: The right of Māori to control the collection,
+  access, use, and sharing of data about Māori people, communities, and
+  resources.
+\item
+  Core principles (Te Mana Raraunga):
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Self-determination (tino rangatiratanga)
+  \item
+    Collective benefit
+  \item
+    Whakapapa (contextual understanding of data)
+  \item
+    Accountability and governance
+  \end{itemize}
+\item
+  Implications:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Research must involve Māori governance.
+  \item
+    Data sharing and usage require consent and alignment with tikanga.
+  \end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Case Study: Health Data}
+\phantomsection\label{case-study-health-data}
+\begin{itemize}
+\tightlist
+\item
+  Health datasets contain sensitive information:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    National health registers
+  \item
+    Hospital records
+  \item
+    Pharmaceutical dispensing
+  \end{itemize}
+\item
+  Māori communities require:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Governance agreements
+  \item
+    Data access protocols
+  \item
+    Use of synthetic data for privacy protection
+  \end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Discussion: Ethical Considerations}
+\phantomsection\label{discussion-ethical-considerations}
+\begin{itemize}
+\tightlist
+\item
+  How should researchers balance privacy, accessibility, and societal
+  benefit?
+\item
+  What processes ensure Māori data sovereignty in practice?
+\item
+  Examples:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Collaborative data governance boards
+  \item
+    Controlled data environments (e.g., Stats NZ IDI)
+  \item
+    Use of synthetic datasets to reduce risk
+  \end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Key References}
+\phantomsection\label{key-references}
+\begin{itemize}
+\tightlist
+\item
+  Privacy Act 2020:
+  \url{https://www.legislation.govt.nz/act/public/2020/0031/latest/LMS23223.html}
+\item
+  Te Mana Raraunga (Māori Data Sovereignty Network):
+  \url{https://www.temanararaunga.maori.nz}
+\item
+  Stats NZ Data Access Guidelines: \url{https://www.stats.govt.nz}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Summary}
+\phantomsection\label{summary}
+\begin{itemize}
+\tightlist
+\item
+  Privacy laws regulate individual rights and organizational
+  responsibilities.
+\item
+  Māori data sovereignty emphasizes governance, consent, and tikanga.
+\item
+  Data science research in Aotearoa must integrate both legal and
+  ethical frameworks.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{The Research Data Landscape: Stats NZ IDI}
+\phantomsection\label{the-research-data-landscape-stats-nz-idi}
+\begin{itemize}
+\tightlist
+\item
+  Integrated Data Infrastructure (IDI) overview
+\item
+  Population-level linked administrative data
+\item
+  Examples of datasets: health, education, social welfare
+\item
+  Opportunities and limitations for researchers
+\end{itemize}
+
+\includegraphics[width=0.8\textwidth,height=\textheight]{figures/IDI_schema.pdf}
+
+??? Note Mention access protocols, privacy safeguards, and potential for
+research collaborations.
+\end{frame}
+
+\begin{frame}{Synthetic Data and Explainable AI}
+\phantomsection\label{synthetic-data-and-explainable-ai}
+\begin{itemize}
+\tightlist
+\item
+  Synthetic data:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Definition and uses
+  \item
+    Utility vs privacy trade-off
+  \end{itemize}
+\item
+  Explainable AI:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Model transparency
+  \item
+    Identifying risk factors and causal relationships
+  \end{itemize}
+\item
+  Applications in NZ social data research
+\end{itemize}
+
+\includegraphics[width=0.8\textwidth,height=\textheight]{figures/synthetic_data_workflow.pdf}
+\includegraphics[width=0.8\textwidth,height=\textheight]{figures/xai_pipeline.pdf}
+
+??? Note Highlight examples where synthetic data enables safe sharing
+and reproducible analysis without compromising privacy.
+\end{frame}
+
+\section{References}\label{references}
+
+\begin{frame}{References}
+\begin{itemize}
+\tightlist
+\item
+  (\citeproc{ref-wang2024enhancing}{Wang et al. 2024}) Wang et al.,
+  ``Enhancing Data Governance through Data-Centric AI'', IEEE ICCAE,
+  2024.
+\item
+  (\citeproc{ref-mazumder2024dataperf}{Mazumder et al. 2024}) Mazumder
+  et al., ``Data-centric AI Performance'', 2024.
+\end{itemize}
+
+\phantomsection\label{refs}
+\begin{CSLReferences}{1}{0}
+\bibitem[\citeproctext]{ref-mazumder2024dataperf}
+Mazumder, Mark, Colby Banbury, Xiaozhe Yao, Bojan Karlaš, William
+Gaviria Rojas, Sudnya Diamos, Greg Diamos, et al. 2024. {``Dataperf:
+Benchmarks for Data-Centric Ai Development.''} \emph{Advances in Neural
+Information Processing Systems} 36.
+
+\bibitem[\citeproctext]{ref-wang2024enhancing}
+Wang, Alex X, Stefanka S Chukova, Andrew Sporle, Barry J Milne, Colin R
+Simpson, and Binh P Nguyen. 2024. {``Enhancing Public Research on
+Citizen Data: An Empirical Investigation of Data Synthesis Using
+{Statistics New Zealand}'s Integrated Data Infrastructure.''}
+\emph{Information Processing \& Management} 61 (1): 103558.
+\url{https://doi.org/10.1016/j.ipm.2023.103558}.
+
+\end{CSLReferences}
 \end{frame}
 
 

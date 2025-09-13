@@ -1,17 +1,51 @@
+# ---
+# title: "DATA480-STAT480 Workshop 2"
+# subtitle: ""
+# author: |
+#   Dr Alex Wang  
+#   Alex.Wang@vuw.ac.nz
+# date: "`r Sys.Date()`"
+# institute: "DATA480-STAT480: Research Preparation"
+# format: 
+#   html:
+#     theme: cosmo
+#     toc: true
+#     toc-depth: 2
+#     number-sections: true
+#     code-fold: true
+#     code-summary: "Click to show/hide code"
+#     code-line-numbers: true
+#     fig-width: 6
+#     fig-height: 4
+#     fig-align: center
+#     css: styles/custom.css
+#   # pdf
+#     # documentclass: beamer
+#     # latex-engine: pdflatex
+# fontsize: 12pt
+# theme: "Madrid"
+# toc: true
+# bibliography: bibli/refs.bib
+# link-citations: true   # Use clickable citations
+# ---
+
 ---
 title: "DATA480-STAT480 Workshop 2"
 subtitle: ""
 author: |
-  Dr Alex Wang 
+  Dr Alex Wang  
   Alex.Wang@vuw.ac.nz
 date: "`r Sys.Date()`"
 institute: "DATA480-STAT480: Research Preparation"
-fontsize: 12pt
 format: 
-  beamer:
-    slide-level: 3
+  beamer-pdf:
+    theme: Madrid        # Beamer presentation theme
+    colortheme: default  # optional, e.g. seahorse, beaver, crane
+    fontsize: 12pt
 bibliography: bibli/refs.bib
+link-citations: true
 ---
+
 
 # Outline Slide
 ## Outline
@@ -19,9 +53,8 @@ bibliography: bibli/refs.bib
 - Research Data Landscape: Stats NZ IDI
 - Synthetic Data and Explainable AI
 
-# Include the modules
-```{r}
-include: modules/01-privacy-maori.qmd
-include: modules/02-data-landscape.qmd
-include: modules/03-synthetic-xai.qmd
-include: modules/04-references.qmd
+{{< include modules/01-privacy-maori.qmd >}}
+{{< include modules/02-data-landscape.qmd >}}
+{{< include modules/03-synthetic-xai.qmd >}}
+{{< include modules/04-references.qmd >}}
+
