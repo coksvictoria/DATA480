@@ -1,0 +1,11 @@
+## The Research Data Landscape: Stats NZ IDI
+
+- Integrated Data Infrastructure (IDI) overview
+- Population-level linked administrative data
+- Examples of datasets: health, education, social welfare
+- Opportunities and limitations for researchers
+
+![](figures/IDI_schema.pdf){width=80%}
+
+??? Note
+Mention access protocols, privacy safeguards, and potential for research collaborations.

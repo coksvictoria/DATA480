@@ -1,0 +1,4 @@
+# References
+
+- [@wang2024enhancing] Wang et al., "Enhancing Data Governance through Data-Centric AI", IEEE ICCAE, 2024.
+- [@mazumder2024dataperf] Mazumder et al., "Data-centric AI Performance", 2024.

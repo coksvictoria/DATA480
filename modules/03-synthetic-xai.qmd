@@ -1,0 +1,15 @@
+## Synthetic Data and Explainable AI
+
+- Synthetic data:
+  - Definition and uses
+  - Utility vs privacy trade-off
+- Explainable AI:
+  - Model transparency
+  - Identifying risk factors and causal relationships
+- Applications in NZ social data research
+
+![](figures/synthetic_data_workflow.pdf){width=80%}
+![](figures/xai_pipeline.pdf){width=80%}
+
+??? Note
+Highlight examples where synthetic data enables safe sharing and reproducible analysis without compromising privacy.

@@ -1,0 +1,90 @@
+---
+title: "Data Science Research on Social Data in Aotearoa"
+subtitle: "Part 1: Privacy and Māori Data Sovereignty"
+author: |
+  Dr Alex Wang  
+  Data Science Team, MBIE  
+  alex.wang@mbie.govt.nz
+date: 2025-09-13
+format: 
+  beamer:
+    slide-level: 2
+fontsize: 12pt
+includes:
+  in-header: ~/Documents/Dropbox/RMarkdown/RMarkdownSettingsNoCode.tex
+---
+
+## Introduction
+
+- Understanding privacy in New Zealand's data environment is critical for research.
+- Māori data sovereignty ensures that Māori data is managed according to tikanga and principles of Te Tiriti o Waitangi.
+- Objectives for this session:
+  - Review key privacy laws.
+  - Introduce Māori data sovereignty concepts.
+  - Discuss implications for social data research.
+
+---
+
+## Privacy Laws in Aotearoa
+
+- **Privacy Act 2020**: Governs collection, storage, use, and sharing of personal data.
+- Key principles:
+  - Purpose limitation
+  - Data minimization
+  - Transparency and accountability
+  - Individual rights to access and correction
+- Enforcement through the Office of the Privacy Commissioner.
+
+---
+
+## Māori Data Sovereignty
+
+- **Definition**: The right of Māori to control the collection, access, use, and sharing of data about Māori people, communities, and resources.
+- Core principles (Te Mana Raraunga):
+  - Self-determination (tino rangatiratanga)
+  - Collective benefit
+  - Whakapapa (contextual understanding of data)
+  - Accountability and governance
+- Implications:
+  - Research must involve Māori governance.
+  - Data sharing and usage require consent and alignment with tikanga.
+
+---
+
+## Case Study: Health Data
+
+- Health datasets contain sensitive information:
+  - National health registers
+  - Hospital records
+  - Pharmaceutical dispensing
+- Māori communities require:
+  - Governance agreements
+  - Data access protocols
+  - Use of synthetic data for privacy protection
+
+---
+
+## Discussion: Ethical Considerations
+
+- How should researchers balance privacy, accessibility, and societal benefit?
+- What processes ensure Māori data sovereignty in practice?
+- Examples:
+  - Collaborative data governance boards
+  - Controlled data environments (e.g., Stats NZ IDI)
+  - Use of synthetic datasets to reduce risk
+
+---
+
+## Key References
+
+- Privacy Act 2020: [https://www.legislation.govt.nz/act/public/2020/0031/latest/LMS23223.html](https://www.legislation.govt.nz/act/public/2020/0031/latest/LMS23223.html)
+- Te Mana Raraunga (Māori Data Sovereignty Network): [https://www.temanararaunga.maori.nz](https://www.temanararaunga.maori.nz)
+- Stats NZ Data Access Guidelines: [https://www.stats.govt.nz](https://www.stats.govt.nz)
+
+---
+
+## Summary
+
+- Privacy laws regulate individual rights and organizational responsibilities.
+- Māori data sovereignty emphasizes governance, consent, and tikanga.
+- Data science research in Aotearoa must integrate both legal and ethical frameworks.
