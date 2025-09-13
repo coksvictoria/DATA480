@@ -1,34 +1,3 @@
-# ---
-# title: "DATA480-STAT480 Workshop 2"
-# subtitle: ""
-# author: |
-#   Dr Alex Wang  
-#   Alex.Wang@vuw.ac.nz
-# date: "`r Sys.Date()`"
-# institute: "DATA480-STAT480: Research Preparation"
-# format: 
-#   html:
-#     theme: cosmo
-#     toc: true
-#     toc-depth: 2
-#     number-sections: true
-#     code-fold: true
-#     code-summary: "Click to show/hide code"
-#     code-line-numbers: true
-#     fig-width: 6
-#     fig-height: 4
-#     fig-align: center
-#     css: styles/custom.css
-#   # pdf
-#     # documentclass: beamer
-#     # latex-engine: pdflatex
-# fontsize: 12pt
-# theme: "Madrid"
-# toc: true
-# bibliography: bibli/refs.bib
-# link-citations: true   # Use clickable citations
-# ---
-
 ---
 title: "DATA480-STAT480 Workshop 2"
 subtitle: ""
@@ -37,14 +6,17 @@ author: |
   Alex.Wang@vuw.ac.nz
 date: "`r Sys.Date()`"
 institute: "DATA480-STAT480: Research Preparation"
-format: 
-  beamer-pdf:
-    theme: Madrid        # Beamer presentation theme
-    colortheme: default  # optional, e.g. seahorse, beaver, crane
-    fontsize: 12pt
+format:
+  revealjs:
+    incremental: true   
+    theme: cosmo           # Quarto/Reveal.js theme
+    transition: slide      # slide transition effect
+    slide-number: true     # show slide numbers
+
 bibliography: bibli/refs.bib
 link-citations: true
 ---
+
 
 
 # Outline Slide
