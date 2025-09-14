@@ -1,11 +1,91 @@
-## The Research Data Landscape: Stats NZ IDI
+# Research Data Landscape in New Zealand
 
-- Integrated Data Infrastructure (IDI) overview
-- Population-level linked administrative data
-- Examples of datasets: health, education, social welfare
-- Opportunities and limitations for researchers
+## Research Data Repositories in Aotearoa NZ
+- Students are encouraged to explore available open datasets:
+  - [data.govt.nz](https://data.govt.nz): NZ Government’s open data portal  
+  - [Aotearoa Data Explorer](https://statistics.govt.nz/tools/aotearoa-data-explorer): Stats NZ’s interactive tool for key social indicators  
+  - [NZ Environmental Data](https://niwa.co.nz/) (NIWA, MfE, Landcare Research)  
+  - [Health Sector Data](https://www.health.govt.nz/) (publications and datasets)  
+  - [Education Counts](https://www.educationcounts.govt.nz/) (education statistics)  
+- These provide context, but our main focus will be the **IDI**.
 
-![](figures/IDI_schema.pdf){width=80%}
+---
 
-??? Note
-Mention access protocols, privacy safeguards, and potential for research collaborations.
+## What is the IDI?
+- **IDI = Integrated Data Infrastructure**
+- A secure research database managed by Stats NZ.
+- Links across domains:
+  - Health  
+  - Education  
+  - Income and tax  
+  - Benefits and social services  
+  - Justice  
+  - Migration and population  
+- Enables longitudinal, population-wide analysis.
+
+---
+
+## Why the IDI is Important
+- Provides a **holistic, integrated view** of New Zealand society.  
+- Enables research into cross-sector issues:  
+  - Health inequalities  
+  - Education → employment transitions  
+  - Crime, justice, and social outcomes  
+- Supports **evidence-based policy** and programme evaluation.  
+- Unique capability: population-level, longitudinal insights.
+
+---
+
+## History and Setup of the IDI
+- Developed by Stats NZ, launched in **2011**.  
+- Evolved from earlier data linkage prototypes.  
+- Built through partnerships with government agencies.  
+- Uses anonymised identifiers for secure linkage.  
+- Designed to balance **data utility** and **privacy protection**.
+
+---
+
+## Governance and Management
+- Managed by **Stats NZ** under strict frameworks.  
+- Researchers require application and training for access.  
+- Work is carried out in **secure Data Labs** (onsite or remote secure).  
+- Core principles:  
+  - Privacy and confidentiality  
+  - Security by design  
+  - Public good use  
+- Regular audits ensure compliance.  
+
+---
+
+## IDI as a National Asset
+- Recognised as a **world-leading integrated database**.  
+- Enables **cross-sector insights** for NZ society.  
+- Used by universities, government, NGOs, and international partners.  
+- Facilitates research into vulnerable and minority populations.  
+- Seen as a **strategic national data infrastructure**.
+
+---
+
+## Limitations of the IDI
+- **Coverage gaps**: little to no primary care, clinical notes, or private sector data.  
+- **Timeliness**: lag of 1–2 years for some datasets.  
+- **Data quality**: administrative datasets not collected for research purposes.  
+- **Access barriers**: approval required; access restricted to secure labs.  
+- **Equity concerns**: Māori data sovereignty and representational issues.  
+
+---
+
+## Future Directions for the IDI
+- Improve timeliness and refresh cycles.  
+- Expand dataset scope: primary care, environmental, genomic data.  
+- Develop **synthetic data** for broader, safe use.  
+- Strengthen **Māori governance frameworks**.  
+- Enhance **remote secure access** tools for researchers [@wang2024enhancing].  
+
+---
+
+## Conclusion
+- NZ has many research data sources; students should explore open datasets independently.  
+- The **IDI is the cornerstone** of NZ’s integrated research data landscape.  
+- Despite limitations, it remains a **national treasure** for research and policy.  
+- Future efforts: make it **more inclusive, timely, and accessible**.  

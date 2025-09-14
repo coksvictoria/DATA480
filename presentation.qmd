@@ -1,32 +1,36 @@
 ---
-title: "DATA480-STAT480 Workshop 2"
-subtitle: ""
-author: |
-  Dr Alex Wang  
-  Alex.Wang@vuw.ac.nz
-date: "`r Sys.Date()`"
-institute: "DATA480-STAT480: Research Preparation"
+title: "DATA480-STAT480: Research Preparation - Workshop 2"
+subtitle: "Dr Alex Wang"
+author: "Alex.Wang@vuw.ac.nz"
+date: 12/01/2025
+date-format: "MMM D, YYYY"
+institute: "School of Mathematics and Statistics, Victoria University of Wellington"
 format:
   revealjs:
-    incremental: true   
-    theme: cosmo           # Quarto/Reveal.js theme
-    transition: slide      # slide transition effect
-    slide-number: true     # show slide numbers
-
+    incremental: true
+    # theme: solarized
+    css: styles/vuw.css
+    transition: slide
+    slide-number: true
+    logo: "logo/VUW.png"
 bibliography: bibli/refs.bib
 link-citations: true
+execute:
+  cache: false
 ---
 
+# Workshop Outline
 
-
-# Outline Slide
-## Outline
-- Privacy Law and Māori Data Sovereignty
-- Research Data Landscape: Stats NZ IDI
-- Synthetic Data and Explainable AI
+- Module 1: Privacy Law & Māori Data Sovereignty
+- Module 2: Research Data Landscape in New Zealand
+- Module 3: Emerging Methods: Synthetic Data & XAI
 
 {{< include modules/01-privacy-maori.qmd >}}
 {{< include modules/02-data-landscape.qmd >}}
 {{< include modules/03-synthetic-xai.qmd >}}
-{{< include modules/04-references.qmd >}}
 
+
+## References
+
+::: {.references}
+:::

@@ -1,15 +1,83 @@
-## Synthetic Data and Explainable AI
 
-- Synthetic data:
-  - Definition and uses
-  - Utility vs privacy trade-off
-- Explainable AI:
-  - Model transparency
-  - Identifying risk factors and causal relationships
-- Applications in NZ social data research
+# Emerging Data Science in Government: Synthetic Data and Explainable AI
 
-![](figures/synthetic_data_workflow.pdf){width=80%}
-![](figures/xai_pipeline.pdf){width=80%}
 
-??? Note
-Highlight examples where synthetic data enables safe sharing and reproducible analysis without compromising privacy.
+## Synthetic Data: Definition & Terminology
+- Artificially generated data mimicking real datasets.  
+- Maintains statistical properties without exposing sensitive information.  
+- Key concepts:  
+  - **Fidelity**: how closely synthetic data matches real data  
+  - **Privacy-preserving**: avoids revealing real individuals  
+  - **Utility**: usefulness for analytics and model training  
+
+---
+
+## Synthetic Data: Challenges & Motivation
+- Real data often limited in **quantity**, **quality**, and **availability**.  
+- Examples: rare diseases, small populations, restricted government datasets.  
+- Traditional data-sharing is restricted due to **privacy regulations**.  
+- Synthetic data addresses these challenges while enabling experimentation.  
+
+---
+
+## Synthetic Data: Latest Models & Methods
+- **GANs (Generative Adversarial Networks)**: generate high-fidelity synthetic tabular data.  
+- **Variational Autoencoders (VAEs)**: model complex distributions and generate realistic synthetic samples.  
+- **Privacy-enhancing methods**: differential privacy, k-anonymity for secure synthesis.  
+- Tools: SDV (Synthetic Data Vault), CTGAN, SynthPop, MOSTLY AI.  
+
+---
+
+## Synthetic Data: Case Studies / Applications
+- Health: simulate patient records for predictive modelling.  
+- Social policy: test policy interventions without exposing personal data.  
+- Urban planning: simulate census/traffic data to evaluate scenarios.  
+- Finance: model synthetic transactions to detect anomalies safely.  
+
+---
+
+## Synthetic Data: Potential Value
+- Safe data sharing across agencies and with researchers.  
+- Overcomes scarcity in small datasets or minority populations.  
+- Improves model robustness and testing before applying on real data.  
+- Accelerates research, policy evaluation, and cross-sector innovation.  
+
+---
+
+## Explainable AI (XAI): Definition & Terminology
+- Techniques that provide **insight into how ML models make decisions**.  
+- Key terms:  
+  - **Transparency**: model decisions are understandable  
+  - **Interpretability**: features driving predictions are explainable  
+  - **Accountability**: ensures ethical and responsible AI use  
+
+---
+
+## XAI: Challenges & Motivation
+- Black-box models (deep learning, ensemble models) are **hard to trust**.  
+- Governments require **explainable decisions** for policy, auditing, and public accountability.  
+- Lack of interpretability slows ML adoption in sensitive sectors.  
+
+---
+
+## XAI: Latest Methods & Models
+- **SHAP (SHapley Additive exPlanations)**: quantifies feature contributions.  
+- **LIME (Local Interpretable Model-agnostic Explanations)**: local surrogate models for predictions.  
+- **Counterfactual explanations**: show what minimal changes alter predictions.  
+- Model-specific interpretable architectures (e.g., attention-based models).  
+
+---
+
+## XAI: Case Studies / Applications
+- Health: explain risk predictions for resource allocation.  
+- Tax: explain anomaly detection results to auditors.  
+- Social services: identify drivers of inequity transparently.  
+- Policy simulations: explain ML-driven recommendations for public review.  
+
+---
+
+## XAI: Potential Value
+- Builds **trust and confidence** among policymakers and stakeholders.  
+- Facilitates **regulatory and ethical compliance** in AI deployment.  
+- Enables **cross-agency ML adoption** by reducing black-box concerns.  
+- Supports **responsible AI** for transparent, accountable government decision-making.  

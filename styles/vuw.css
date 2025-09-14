@@ -1,0 +1,18 @@
+.reveal h1, h2, h3, h4, h5, h6 {
+  color: #004d00; /* dark green */
+}
+
+.reveal li {
+  color: #006600; /* slightly lighter green for bullets */
+}
+
+.reveal a {
+  color: #008000; /* links */
+}
+
+
+.reveal .slide-logo {
+   max-height: 3.5em !important;
+}
+
+
