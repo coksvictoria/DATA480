@@ -2,7 +2,7 @@
 title: "DATA480-STAT480: Research Preparation - Workshop 2"
 subtitle: "Dr Alex Wang"
 author: "Alex.Wang@vuw.ac.nz"
-date: 12/01/2025
+date: 12/08/2025
 date-format: "MMM D, YYYY"
 institute: "School of Mathematics and Statistics, Victoria University of Wellington"
 format:
@@ -18,7 +18,6 @@ link-citations: true
 execute:
   cache: false
 ---
-
 # Workshop Outline
 
 - Module 1: Privacy Law & Māori Data Sovereignty
