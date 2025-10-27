@@ -1,45 +1,74 @@
-# Privacy Law and Māori Data Sovereignty
+# Privacy, Ethics, and Data Sovereignty in Aotearoa Research
 
-## Why Privacy Matters
-- Protects personal information from misuse  
-- Builds **trust** in research and institutions  
-- For Māori, privacy links to **data sovereignty** (collective as well as individual rights)  
-- Both a **legal requirement** and an **ethical obligation**  
+## Why Privacy, Ethics, and Data Sovereignty Matter
 
----
+- Protects individuals and communities from **misuse and harm** in data practices.  
+- **Ethics** ensures research is conducted with **respect, fairness, and informed consent**, safeguarding participants and relationships.  
+- For **Māori**, privacy extends beyond individuals to **collective rights** — a foundation of **Māori Data Sovereignty** [@kukutai2023maori].  
+- Upholding these principles is both a **legal duty** under the Privacy Act 2020 and an **ethical commitment** to **equity and responsibility** in research [@chamberlain2022future].  
+- Builds **trust, integrity, and accountability** in research and institutions. 
 
-## Legal Foundations in NZ
-- **Privacy Act 2020** governs personal data  
-- Replaced 1993 Act → updated for digital realities  
-- Sets rules for collecting, storing, sharing, and using data  
-- Applies to **all organisations** — govt, universities, businesses  
 
 ---
 
-## Core Privacy Principles
-- **Purpose limitation** → collect only for a clear reason  
-- **Minimisation** → don’t over-collect  
-- **Accuracy** → check before use  
-- **Security** → protect against loss/misuse  
-- **Access & correction** → people can see/correct their info  
+## Privacy Legal Foundations in Aotearoa New Zealand
+
+- **Privacy Act 2020** governs how personal information is collected, used, and shared.  
+- Replaced the 1993 Act to meet **digital and data-driven realities**.  
+- Applies to **all organisations** — public and private.  
+- Overseen by the **Office of the Privacy Commissioner**.  
+- Establishes **13 Information Privacy Principles (IPPs)** guiding fair and lawful handling of personal data — from collection to access.  
+
 
 ---
 
-## Obligations for Data Users
-- Must **inform individuals** when collecting  
-- Ensure **robust security safeguards**  
-- Individuals can request access & corrections  
-- Some research exemptions (e.g. de-identified data)  
-- Oversight from the **Privacy Commissioner**  
+
+## The 13 IPPs (1–7)
+
+<div style="font-size:0.7em">
+
+| **Theme** | **#** | **Principle** | **Key Idea** |
+|:-------|:-:|:-------|:-------------------|
+| **Collection** | 1 | Purpose of collection | Collect information only for a **lawful and necessary** purpose. |
+|  | 2 | Source of information | Collect directly from the individual where possible. |
+|  | 3 | Collection from individual | Must **inform** people about what, why, and how data is used. |
+|  | 4 | Manner of collection | Collect **fairly and lawfully**, respecting dignity and context. |
+| **Storage & Security** | 5 | Storage and security | Protect information from loss, misuse, or unauthorised access. |
+| **Access & Correction** | 6 | Access | People have a right to **see** their personal information. |
+|  | 7 | Correction | People can **correct or update** their information. |
+
+</div>
+::: notes
+💬 *Prompt:* How might these principles apply when collecting data through surveys or social media scraping in Māori communities?
+:::
+---
+
+## The 13 IPPs (8–13)
+
+<div style="font-size:0.7em">
+
+| **Theme** | **#** | **Principle** | **Key Idea** |
+|:-------|:-:|:-------|:-------------------|
+| **Use & Accuracy** | 8 | Accuracy | Ensure data is **up to date and correct** before use. |
+|  | 9 | Retention | Don’t keep information **longer than necessary**. |
+|  | 10 | Use limitation | Use only for the **original purpose** collected. |
+| **Disclosure** | 11 | Disclosure | Share only when **authorised** or **expected**. |
+| **Cross-border & Identifiers** | 12 | Cross-border disclosure | Safeguard information sent **overseas** (ensure similar protections). |
+|  | 13 | Unique identifiers | Use unique IDs only when **necessary** and **non-misleading**. |
+<div style="font-size:0.8em; text-align:right; margin-top:0.5em;">
+Source: [Office of the Privacy Commissioner — NZ Privacy Principles](https://www.privacy.org.nz/privacy-principles/)
+</div>
+</div>
+::: notes
+💬 *Prompt:* Which of these principles are most relevant to Māori Data Sovereignty, especially where data is stored offshore or linked using unique identifiers?
+:::
 
 ---
 
-## Implications for Research
-- Balance **privacy** with **public good** outcomes  
-- Health/social research → **ethics approval** + **Māori consultation**  
-- **Synthetic data** + **XAI** reduce risks but keep insights  
-- Privacy = **trust + equity**  
-
+## Reflecting on the 13 IPPs
+- The 13 IPPs form the **foundation of the Privacy Act 2020**.  
+- They are largely **individual-centric** — focused on individual rights, not collective data control.  
+- This raises key questions for Māori contexts:  Can privacy laws evolve to recognise **collective data sovereignty**?  
 ---
 
 ## Māori Data Sovereignty — What It Means
@@ -50,19 +79,10 @@
   • Data about Māori resources (land, language, environment)  
 - Sovereignty = rights over **ownership, governance, and use**  
 
----
-
 ## Guiding Principles
 - **Rangatiratanga** → authority over Māori data  
 - **Kaitiakitanga** → guardianship & stewardship  
 - **Manaakitanga** → respect, reciprocity, consent  
-
----
-
-## Te Tiriti & Governance
-- **Te Tiriti o Waitangi** underpins Māori rights  
-- Governance requires Māori in decision-making roles  
-- Control includes **where/how data is stored**  
 
 ---
 
@@ -73,7 +93,13 @@
 
 ---
 
-## Implications for Researchers
-- Projects must ensure **Māori participation & oversight**  
-- Data infrastructures (e.g. IDI) should embed Māori governance  
-- Future tools (synthetic data, protocols) must respect **Māori authority**  
+## Implications for Research
+
+- Privacy = **trust + equity**  
+- Balance **privacy** with **public good** outcomes  
+- Health/social research → **ethics approval** + **Māori consultation**
+
+- Future Work
+  - Future data systems should **embed Māori Data Sovereignty principles** in their design and governance.  
+  - Emerging tools that enhance privacy (e.g. **synthetic data**, new data protocols) must still **respect Māori authority and values**.  
+

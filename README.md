@@ -1,9 +1,9 @@
-# DATA480-STAT480 Workshop 2
+# DATA480-STAT480 Workshop 3
 
 **Author:** Dr Alex Xing Wang  
 **Email:** Alex.Wang@vuw.ac.nz  
 **Affiliation:** School of Mathematics and Statistics, Victoria University of Wellington  
-**Date:** 12/01/2025  
+**Date:** 12/08/2025  
 
 ---
 

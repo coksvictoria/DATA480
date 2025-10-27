@@ -1,5 +1,5 @@
 ---
-title: "DATA480-STAT480: Research Preparation - Workshop 2"
+title: "DATA480-STAT480: Research Preparation - Workshop 3"
 subtitle: "Dr Alex Wang"
 author: "Alex.Wang@vuw.ac.nz"
 date: 12/08/2025
