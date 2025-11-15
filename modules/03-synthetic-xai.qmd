@@ -13,10 +13,10 @@
 ---
 
 ## Synthetic Data: Challenges & Motivation
-- Real data often limited in **quantity**, **quality**, and **availability**.  
-- Examples: rare diseases, small populations, restricted government datasets.  
-- Traditional data-sharing is restricted due to **privacy regulations**.  
-- Synthetic data addresses these challenges while enabling experimentation.  
+Real data often limited in **quantity**, **quality**, and **availability**.  
+
+[![](../figures/M3_Data_Issues.jpg){width="80%"}](https://doi.org/10.1007/978-981-96-8183-9_28)
+
 
 ---
 

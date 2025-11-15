@@ -16,3 +16,12 @@
 }
 
 
+/* Adjust global font size */
+.reveal {
+  font-size: 32px;
+}
+
+/* Adjust heading sizes */
+.reveal h1 { font-size: 2.2em; }
+.reveal h2 { font-size: 1.8em; }
+.reveal h3 { font-size: 1.4em; }
