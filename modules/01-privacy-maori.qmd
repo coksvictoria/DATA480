@@ -23,7 +23,7 @@
 ---
 
 
-## The 13 IPPs (1–7)
+## The 13 IPPs (1–7) IPP3a
 
 <div style="font-size:0.7em">
 
@@ -68,7 +68,7 @@ Source: [Office of the Privacy Commissioner — NZ Privacy Principles](https://w
 ## Reflecting on the 13 IPPs
 - The 13 IPPs form the **foundation of the Privacy Act 2020**.  
 - They are largely **individual-centric** — focused on individual rights, not collective data control.  
-- This raises key questions for Māori contexts:  Can privacy laws evolve to recognise **collective data sovereignty**?  
+- This raises key questions for Māori contexts:  Can privacy laws evolve to recognise **collective data sovereignty**?[@watts2025protecting] 
 ---
 
 ## Māori Data Sovereignty — What It Means
