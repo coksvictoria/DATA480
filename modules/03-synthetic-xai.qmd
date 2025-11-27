@@ -3,9 +3,13 @@
 
 
 ## Synthetic Data: Definition & Terminology
-- Artificially generated data mimicking real datasets.  
+
+**Context:**  
+Synthetic tabular data generation learns the joint distribution of mixed continuous and discrete features and produces a synthetic table `T_synth` that retains the statistical properties of the original dataset. Modern **generative AI models** capture complex dependencies and enable realistic, high-utility synthetic datasets [@raghunathan2021synthetic; @feuerriegel2024generative].
+
+- Artificially generated data mimicking real datasets [@raghunathan2021synthetic].  
 - Maintains statistical properties without exposing sensitive information.  
-- Key concepts:  
+- Key concepts [@van2023synthetic]:  
   - **Fidelity**: how closely synthetic data matches real data  
   - **Privacy-preserving**: avoids revealing real individuals  
   - **Utility**: usefulness for analytics and model training  
@@ -13,34 +17,34 @@
 ---
 
 ## Synthetic Data: Challenges & Motivation
-- Real data often limited in **quantity**, **quality**, and **availability**.  
-- Examples: rare diseases, small populations, restricted government datasets.  
-- Traditional data-sharing is restricted due to **privacy regulations**.  
-- Synthetic data addresses these challenges while enabling experimentation.  
+Real data often limited in **quantity**, **quality**, and **availability**.  
+::: {.fragment}
+[![](../figures/M3_Data_Issues.jpg){width="80%"}](https://doi.org/10.1007/978-981-96-8183-9_28)
+:::
+---
+
+## Synthetic Data: Evolution of TDS Methods
+
+- Driven by **data complexity**, **computing advances**, and **privacy needs**.  
+- Early phase: **sampling methods** to improve balance and efficiency.  
+- Foundations: **statistical models** (imputation, probabilistic approaches).  
+- Transition: **shallow DGMs** using MLPs → start of neural synthesis.  
+- Modern era: **diffusion models** and **LLMs** → higher fidelity and flexibility.  
+
+[![](../figures/M3_Progression.png){width="100%"}](https://doi.org/10.1007/978-981-96-8183-9_28)
 
 ---
 
-## Synthetic Data: Latest Models & Methods
-- **GANs (Generative Adversarial Networks)**: generate high-fidelity synthetic tabular data.  
-- **Variational Autoencoders (VAEs)**: model complex distributions and generate realistic synthetic samples.  
-- **Privacy-enhancing methods**: differential privacy, k-anonymity for secure synthesis.  
-- Tools: SDV (Synthetic Data Vault), CTGAN, SynthPop, MOSTLY AI.  
+## Synthetic Data: Value & Applications
 
----
-
-## Synthetic Data: Case Studies / Applications
-- Health: simulate patient records for predictive modelling.  
-- Social policy: test policy interventions without exposing personal data.  
-- Urban planning: simulate census/traffic data to evaluate scenarios.  
-- Finance: model synthetic transactions to detect anomalies safely.  
-
----
-
-## Synthetic Data: Potential Value
-- Safe data sharing across agencies and with researchers.  
-- Overcomes scarcity in small datasets or minority populations.  
-- Improves model robustness and testing before applying on real data.  
-- Accelerates research, policy evaluation, and cross-sector innovation.  
+- **Safe data sharing** across agencies and research sectors.  
+- Addresses **data scarcity**, especially for small or minority groups.  
+- Enhances **model development**, robustness, and system testing.  
+- Supports **policy evaluation** and cross-sector innovation.  
+- **Health**: simulate patient records for modelling and risk analysis.  
+- **Social policy**: test interventions without exposing individuals.  
+- **Urban planning**: generate census/traffic scenarios for planning.  
+- **Finance**: create synthetic transactions for safe anomaly detection.  
 
 ---
 
@@ -54,30 +58,42 @@
 ---
 
 ## XAI: Challenges & Motivation
-- Black-box models (deep learning, ensemble models) are **hard to trust**.  
-- Governments require **explainable decisions** for policy, auditing, and public accountability.  
-- Lack of interpretability slows ML adoption in sensitive sectors.  
+- ML adoption requires both accuracy and interpretability.
+- Model Accurarcy vs. Interpretability trade-off.  
+ 
+[![](../figures/M3_utility_interpretability.png){width="60%"}](https://www.flowhunt.io/glossary/model-interpretability/)
 
 ---
 
 ## XAI: Latest Methods & Models
-- **SHAP (SHapley Additive exPlanations)**: quantifies feature contributions.  
-- **LIME (Local Interpretable Model-agnostic Explanations)**: local surrogate models for predictions.  
-- **Counterfactual explanations**: show what minimal changes alter predictions.  
+- Intrinsic Interpretability: simple models (e.g. LR, DT) [@ai2021model].
+- Post-hoc Explanations for complex models:
+  - **SHAP (SHapley Additive exPlanations)**: quantifies feature contributions.  
+  - **LIME (Local Interpretable Model-agnostic Explanations)**: local surrogate models for predictions.
+  - Partial Dependence Plots (PDPs): Show how changes in one feature affect predictions while averaging over others.
+
+- Correlation vs. Causation: association <> causal impact: **Counterfactual explanations**: show what minimal changes alter predictions [@altman2015points].
 - Model-specific interpretable architectures (e.g., attention-based models).  
 
 ---
 
-## XAI: Case Studies / Applications
-- Health: explain risk predictions for resource allocation.  
-- Tax: explain anomaly detection results to auditors.  
-- Social services: identify drivers of inequity transparently.  
-- Policy simulations: explain ML-driven recommendations for public review.  
+## Explainable AI (XAI) in Government
 
----
+XAI is essential in the public sector to ensure transparency, accountability, and equitable decision-making.
 
-## XAI: Potential Value
-- Builds **trust and confidence** among policymakers and stakeholders.  
-- Facilitates **regulatory and ethical compliance** in AI deployment.  
-- Enables **cross-agency ML adoption** by reducing black-box concerns.  
-- Supports **responsible AI** for transparent, accountable government decision-making.  
+::: {.fragment}
+#### Value
+- Builds trust and confidence among policymakers and the public.  
+- Reduces black-box concerns and enables cross-agency ML adoption.  
+- Strengthens responsible, transparent government decision-making.
+:::
+
+::: {.fragment}
+#### Applications
+- **Health:** Explain risk predictions to support fair resource allocation.  
+- **Tax & Compliance:** Make anomaly/fraud detection outputs interpretable for auditors.  
+- **Social Services:** Reveal drivers of inequity to guide ethical, evidence-based interventions.  
+:::
+
+
+ 
