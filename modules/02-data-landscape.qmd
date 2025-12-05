@@ -54,7 +54,7 @@ Access to the IDI is carefully controlled, following the **Stats NZ “Five Safe
 
 - **Access constraints**: analysis only in secure, on-site Data Labs, no offsite access [@milne2019data].
 
-- **Computational and software limitations**: restricted processing power and limited programming languages [@choi2019adjusting].
+- **Computational and software limitations**: restricted processing power and limited programming languages [@wang2024enhancing].
 
 - **Complex approval processes**: time-consuming access and release checks due to confidentiality [@milne2022longitudinal].
 

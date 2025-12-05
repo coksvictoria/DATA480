@@ -1,6 +1,6 @@
 ---
 title: "DATA480-STAT480: Research Preparation - Workshop 3"
-subtitle: "Dr Alex Wang"
+subtitle: "Dr. Alex Wang"
 author: "Alex.Wang@vuw.ac.nz"
 date: 12/08/2025
 date-format: "MMM D, YYYY"
@@ -28,6 +28,9 @@ execute:
 {{< include modules/02-data-landscape.qmd >}}
 {{< include modules/03-synthetic-xai.qmd >}}
 
+## Q&A
+
+Any questions?
 
 ## References
 

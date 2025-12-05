@@ -23,7 +23,7 @@
 ---
 
 
-## The 13 IPPs (1–7) IPP3a
+## The 13 IPPs (1–7)
 
 <div style="font-size:0.7em">
 
@@ -32,10 +32,9 @@
 | **Collection** | 1 | Purpose of collection | Collect information only for a **lawful and necessary** purpose. |
 |  | 2 | Source of information | Collect directly from the individual where possible. |
 |  | 3 | Collection from individual | Must **inform** people about what, why, and how data is used. |
+| 1 May 2026 | 3a* | Indirect Collection | Must **inform** people about what, why, and how data is used, if collect from someone other than the person themselves. |
 |  | 4 | Manner of collection | Collect **fairly and lawfully**, respecting dignity and context. |
 | **Storage & Security** | 5 | Storage and security | Protect information from loss, misuse, or unauthorised access. |
-| **Access & Correction** | 6 | Access | People have a right to **see** their personal information. |
-|  | 7 | Correction | People can **correct or update** their information. |
 
 </div>
 ::: notes
@@ -49,6 +48,8 @@
 
 | **Theme** | **#** | **Principle** | **Key Idea** |
 |:-------|:-:|:-------|:-------------------|
+| **Access & Correction** | 6 | Access | People have a right to **see** their personal information. 
+|  | 7 | Correction | People can **correct or update** their information. |
 | **Use & Accuracy** | 8 | Accuracy | Ensure data is **up to date and correct** before use. |
 |  | 9 | Retention | Don’t keep information **longer than necessary**. |
 |  | 10 | Use limitation | Use only for the **original purpose** collected. |
@@ -68,14 +69,12 @@ Source: [Office of the Privacy Commissioner — NZ Privacy Principles](https://w
 ## Reflecting on the 13 IPPs
 
 - The 13 IPPs form the **foundation of the Privacy Act 2020**.  
-<<<<<<< HEAD
-- They are largely **individual-centric** — focused on individual rights, not collective data control.  
-- This raises key questions for Māori contexts:  Can privacy laws evolve to recognise **collective data sovereignty**?[@watts2025protecting] 
-=======
-- They are largely **individual-centric** — focused on individual rights, not collective data control.
-- This raises key questions for Māori contexts:  Can privacy laws evolve to recognise **collective data sovereignty**?
 
->>>>>>> 135d01f925cb654beaf41e581cbe30ebd5a9e96d
+
+- They are largely **individual-centric** — focused on individual rights, not collective data control.  
+- This raises key questions for Māori contexts:  Can privacy laws evolve to recognise **collective data sovereignty**? [@watts2025protecting] 
+
+
 ---
 
 ## Māori Data Sovereignty — What It Means
@@ -87,6 +86,7 @@ Source: [Office of the Privacy Commissioner — NZ Privacy Principles](https://w
 - Sovereignty = rights over **ownership, governance, and use** [@maori_data_sovereignty]. 
 
 ::: {.fragment}
+
 
 #### Guiding Principles
 

@@ -17,10 +17,12 @@ Synthetic tabular data generation learns the joint distribution of mixed continu
 ---
 
 ## Synthetic Data: Challenges & Motivation
-Real data often limited in **quantity**, **quality**, and **availability**.  
+Real data often limited in **quantity**, **quality**, and **availability** [@wang2025genai].  
+
 ::: {.fragment}
-[![](../figures/M3_Data_Issues.jpg){width="80%"}](https://doi.org/10.1007/978-981-96-8183-9_28)
+[![](../figures/M3_Data_Issues.jpg){width="77%"}](https://doi.org/10.1007/978-981-96-8183-9_28)
 :::
+
 ---
 
 ## Synthetic Data: Evolution of TDS Methods
@@ -61,7 +63,7 @@ Real data often limited in **quantity**, **quality**, and **availability**.
 - ML adoption requires both accuracy and interpretability.
 - Model Accurarcy vs. Interpretability trade-off.  
  
-[![](../figures/M3_utility_interpretability.png){width="60%"}](https://www.flowhunt.io/glossary/model-interpretability/)
+[![](../figures/M3_utility_interpretability.png){width="65%"}](https://www.flowhunt.io/glossary/model-interpretability/)
 
 ---
 
@@ -79,7 +81,7 @@ Real data often limited in **quantity**, **quality**, and **availability**.
 
 ## Explainable AI (XAI) in Government
 
-XAI is essential in the public sector to ensure transparency, accountability, and equitable decision-making.
+XAI is essential in the public sector to ensure transparency, accountability, and equitable decision-making [@wang2024early].
 
 ::: {.fragment}
 #### Value
