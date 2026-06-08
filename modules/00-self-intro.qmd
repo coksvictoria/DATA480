@@ -1,0 +1,153 @@
+## Introduction: Who Am I?
+
+- PhD and MSc in Data Science, Victoria University of Wellington
+
+- Data Science Manager at MBIE
+    - Technology, Methodology and Governance 
+    - Lead data science and AI projects supporting evidence-based decision-making
+
+- Research Fellow/Associate at VUW, UoA and Stanford University
+    - Synthetic Data
+    - AI in Healthcare
+    - Population Research in IDI
+
+
+::: notes
+💬 Ask students: How many of you are interested in AI, Data Science, or Software Engineering careers?
+:::
+
+---
+
+## My Career Journey
+
+- Started as a student interested in mathematics and statistics
+- Completed MSc and PhD in Data Science
+- Worked on research and analytics projects
+- Progressed into leadership and management roles
+
+- Key Lessons Learned:
+    - Careers are rarely linear
+    - Many opportunities arise unexpectedly
+    - Continuous learning is essential
+    - Networking and communication matter
+
+::: notes
+💬 Emphasise that there was no master plan. Most career opportunities emerged through being open to new challenges.
+:::
+
+---
+
+## What Does MBIE Do?
+
+- Support New Zealand's economic growth 
+- Provide evidence to support government decisions
+    - Economic analysis and forecasting
+    - Labour market insights
+    - Research and innovation funding
+    - Immigration and housing
+    - Programme evaluation and policy development
+
+- Data helps improve decisions that affect millions of New Zealanders
+
+::: notes
+💬 Students are often surprised that data science careers exist outside technology companies.
+:::
+
+---
+
+## What Does a Data Scientist Actually Do?
+
+1. Understand the problem
+2. Gather and prepare data
+3. Analyse data and build models
+4. Communicate findings
+5. Support decision-making
+
+- Skills required:
+    - Coding is important, but communication is more critical
+    - Data is often not ready and business logic is complex
+    - Problem-solving is the core skill
+    - Stakeholder engagement is key to success
+
+::: notes
+💬 Give an example of a real project where communication was as important as technical work.
+:::
+
+---
+
+## Career Opportunities for Graduates
+
+- Common Entry-Level Roles
+    - Data Analyst
+    - Business Analyst
+    - Research Analyst
+    - Data Scientist
+    - Software Engineer
+    - Policy Analyst with technical skills
+
+- What Employers Look For
+    - Curiosity & Initiative
+    - Problem-solving ability
+    - Teamwork
+    - Work ethic and attitude
+
+::: notes
+💬 Employers hire for potential and attitude as much as technical skills.
+:::
+
+---
+
+## Skills That Matter Most
+
+| Technical Skills | Professional Skills |
+|-----------------|--------------------|
+| SQL | Communication |
+| Python / R | Teamwork |
+| Statistics | Critical Thinking |
+| Data Visualisation | Stakeholder Engagement |
+| AI & Machine Learning | Problem Solving |
+
+- Key Observation
+    - Corporate technology roadmap are different
+    - Communication skills often determine who gets hired and promoted
+    - DS is evolving rapidly so need to be future proof
+
+::: notes
+💬 Share examples where communication outweighed technical brilliance.
+:::
+
+---
+
+## How to Prepare While You Are a Student
+
+- Build Experience: Personal projects, Internships, Research projects, Hackathons, Volunteer opportunities
+
+- Build Your Professional Profile: GitHub portfolio, LinkedIn profile, Industry networking events, Professional communities
+
+- Interview Preparation: Explain your projects clearly, Focus on impact and outcomes, Demonstrate how you approach problems
+
+- There is no single "right" pathway: Research or Startups?
+
+::: notes
+💬 A good project portfolio often differentiates candidates more than grades.
+:::
+
+---
+
+## Final Advice
+
+1. Careers are not linear
+2. Build projects, not just grades
+3. Communication is a superpower
+4. Take opportunities before you feel ready
+5. Never stop learning
+
+::: {.fragment}
+
+> Technology is ultimately about solving real-world problems and creating positive impact.
+
+:::
+<!-- Stay curious, keep learning, and opportunities will follow. -->
+
+- Questions?
+
