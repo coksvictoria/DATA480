@@ -108,3 +108,22 @@ Source: [Office of the Privacy Commissioner — NZ Privacy Principles](https://w
   - Future data systems should **embed Māori Data Sovereignty principles** in their design and governance.  
   - Emerging tools that enhance privacy (e.g. **synthetic data**, new data protocols) must still **respect Māori authority and values** [@wang2024enhancing; @park2021synthetic; @xu2021synthetic].  
 
+---
+
+## Group Discussion: Should Aotearoa Have a Universal Person Identifier?
+
+::: {.fragment}
+**Scenario:** The government is considering a unique identifier for everyone using public services to make it easier to match records and coordinate services. Your group must recommend whether to proceed, reject the proposal, or pursue an alternative.
+:::
+
+- **10 min discussion:** Agree on a recommendation and two conditions or safeguards.
+
+- **10 min report-back:** Present your reasoning; be ready to respond to a different group's recommendation.
+
+::: notes
+- Who could benefit, and who could be excluded or disproportionately exposed to harm?
+- Weigh more reliable matching and service continuity against misidentification, surveillance, function creep, and the consequences of a breach.
+- What Māori authority and governance, legal limits, oversight, and practical alternatives must be considered before any decision?
+:::
+
+

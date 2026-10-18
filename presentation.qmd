@@ -1,13 +1,9 @@
 ---
-# title: "DATA480-STAT480: Research Preparation - Workshop 3"
-# subtitle: "Dr. Alex Wang"
-# author: "Alex.Wang@vuw.ac.nz"
-title: "From Uni to Work: Navigating Your Career Journey"
-subtitle: "IEEE Young Professionals Session"
-author: "Dr. Alex Wang"
-date: 06/11/2026
+title: "DATA480-STAT480: Research Preparation - Workshop 2"
+subtitle: "Dr Alex Wang"
+author: "Alex.Wang@vuw.ac.nz"
 date-format: "MMM D, YYYY"
-institute: "Data Science, Ministry of Business, Innovation and Employment <br> School of Mathematics and Statistics, Victoria University of Wellington"
+institute: "School of Mathematics and Statistics, Victoria University of Wellington"
 format:
   revealjs:
     incremental: true
@@ -21,22 +17,37 @@ link-citations: true
 execute:
   cache: false
 ---
-<!-- # Workshop Outline -->
 
-<!-- - Module 1: Privacy Law & Māori Data Sovereignty
+# Workshop Outline
+
+- Module 1: Privacy Law & Māori Data Sovereignty
 - Module 2: Research Data Landscape in New Zealand
-- Module 3: Emerging Methods: Synthetic Data & XAI -->
+- Module 3: Emerging Methods: Synthetic Data & XAI
 
-{{< include modules/00-self-intro.qmd >}}
-<!-- {{< include modules/01-privacy-maori.qmd >}}
+::: {.fragment}
+<div style="font-size: 0.8em">
+
+Each module: 30 min lecture + 10 min group discussion + 10 min report-back +10 min break
+
+</div>
+:::
+
+
+{{< include modules/01-privacy-maori.qmd >}}
+
+## Break (10 minutes)
+
 {{< include modules/02-data-landscape.qmd >}}
-{{< include modules/03-synthetic-xai.qmd >}} -->
 
-<!-- ## Q&A
+## Break (10 minutes)
 
-Any questions? -->
+{{< include modules/03-synthetic-xai.qmd >}}
 
-<!-- ## References
+## Q&A
 
-::: {.references}
-::: -->
+Any questions?
+
+## References
+
+::: references
+:::

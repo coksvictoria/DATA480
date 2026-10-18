@@ -97,5 +97,24 @@ XAI is essential in the public sector to ensure transparency, accountability, an
 - **Social Services:** Reveal drivers of inequity to guide ethical, evidence-based interventions.  
 :::
 
+---
+
+## Group Discussion: Should an ACC Claim Decision Be Automated?
+
+
+::: {.fragment}
+**Hypothetical scenario:** A government team asks you to build an automated model to assess ACC claim applications. Do not assume that full automation is appropriate: decide what role, if any, a model should have.
+:::
+
+- **10 min discussion:** Recommend full automation, decision support with human review, or no model; give two reasons and one essential safeguard.
+
+- **10 min report-back:** Defend your recommendation and identify the evidence that could change it.
+
+::: notes
+- What decision or task would the system support, and what evidence would be needed to show it improves on the current process without unfairly denying or delaying valid claims?
+- What data, labels, and evaluation would you require? How would you test errors and outcomes for different groups, including people poorly represented in historical data?
+- Where could synthetic data help—and what could it not prove about privacy or real-world performance? What meaningful explanation, human review, reasons, and appeal would claimants need?
+:::
+
 
  

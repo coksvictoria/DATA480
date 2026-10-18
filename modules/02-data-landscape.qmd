@@ -75,3 +75,22 @@ Access to the IDI is carefully controlled, following the **Stats NZ “Five Safe
 -   The **IDI is the cornerstone** of NZ’s integrated research data landscape.\
 -   Despite limitations, it remains a **national treasure** for research and policy.\
 -   Future efforts: make it **more inclusive, timely, and accessible**.
+
+------------------------------------------------------------------------
+
+## Group Discussion: Following Young People's Pathways
+
+::: {.fragment}
+**Research challenge:** Among young people leaving secondary school, how do education, employment, and income pathways unfold over the following five years, and how might these patterns differ across groups or regions?
+
+:::
+
+- **10 min discussion:** Refine the question and identify one important limitation.
+
+- **10 min report-back:** Pitch the research question, data needed, and one caveat.
+
+::: notes
+- Define a cohort, a useful time period, and the outcomes needed to answer the question. What would linked longitudinal data add?
+- Which IDI sources would you need to check are available and suitable? What could be missing, delayed, mislinked, or measured only as an administrative record?
+- How would you avoid overclaiming causation, and how would you involve affected communities in interpreting and using the findings?
+:::
