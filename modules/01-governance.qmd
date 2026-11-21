@@ -104,19 +104,6 @@ Source: [Office of the Privacy Commissioner — NZ Privacy Principles](https://w
 
 ---
 
-
-## Implications for Research
-
-- Privacy = **trust + equity**  
-- Balance **privacy** with **public good** outcomes  
-- Health/social research → **ethics approval** + **Māori consultation**
-
-- Future Work
-  - Future data systems should **embed Māori Data Sovereignty principles** in their design and governance.  
-  - Emerging tools that enhance privacy (e.g. **synthetic data**, new data protocols) must still **respect Māori authority and values** [@wang2024enhancing; @park2021synthetic; @xu2021synthetic].  
-
----
-
 ## Data Governance in the Public Sector
 
 - **Data governance** = the policies, roles, and processes that manage data as a trusted, strategic asset across its lifecycle — collection, storage, access, use, and disposal [@wang2024iccae].  
@@ -125,26 +112,10 @@ Source: [Office of the Privacy Commissioner — NZ Privacy Principles](https://w
   - **Government Chief Data Steward** (Stats NZ) — sets direction, standards, and capability for data leadership across agencies.  
   - **Algorithm Charter for Aotearoa New Zealand** — agencies commit to transparency, partnership, and human oversight when using algorithms.  
   - **Agency-level data governance** — data stewards, data classification, and access/approval processes (e.g. the IDI's Five Safes, covered in Module 2).  
-  - **Data Protection and Use Policy (DPUP)** — social sector guidance for ethical, trustworthy data sharing between agencies.  
+
 
 ::: {.fragment}
 - Good governance doesn't just make data **compliant** — it makes data, models, and platforms **trustworthy** [@wang2024iccae].
 :::
 
 ---
-
-## Group Discussion: Should Aotearoa Have a Universal Person Identifier?
-
-::: {.fragment}
-**Scenario:** The government is considering a unique identifier for everyone using public services to make it easier to match records and coordinate services. Your group must recommend whether to proceed, reject the proposal, or pursue an alternative.
-:::
-
-- **10 min discussion:** Agree on a recommendation and two conditions or safeguards.
-
-- **10 min report-back:** Present your reasoning; be ready to respond to a different group's recommendation.
-
-::: notes
-- Who could benefit, and who could be excluded or disproportionately exposed to harm?
-- Weigh more reliable matching and service continuity against misidentification, surveillance, function creep, and the consequences of a breach.
-- What Māori authority and governance, legal limits, oversight, and practical alternatives must be considered before any decision?
-:::

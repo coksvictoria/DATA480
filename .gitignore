@@ -111,3 +111,6 @@ figures/raw_data/
 Presentation/*.pdf
 Presentation/*.pptx
 
+
+/.quarto/
+**/*.quarto_ipynb

@@ -24,33 +24,11 @@ Public sector data science practice = **Data + Algorithm + Platform**, underpinn
 
 - **Part 1:** Intro → Module 1: Governance → Module 2: Data
 - **15-minute break**
-- **Part 2:** Module 3: Algorithm → Module 4: Platform → Wrap-up
+- **Part 2:** Module 3: Algorithm → Module 4: Platform
+- **Group discussion:** 20-minute discussion based on a hypothetical research question
+- **Wrap-up:** Q&A
 
-::: {.fragment}
-<div style="font-size: 0.8em">
 
-Modules 1–3: 30 min lecture + 10 min group discussion + 10 min report-back + 10 min break
-Module 4: ~15 min brief overview, no formal group exercise
-
-</div>
-:::
-
-## A Framework for Public Sector Data Science
-
-```{mermaid}
-flowchart BT
-    G["Governance<br/>(Privacy Law · Māori Data Sovereignty · Data Governance)"]
-    D[Data]
-    Alg[Algorithm]
-    P[Platform]
-    G --> D
-    G --> Alg
-    G --> P
-```
-
-::: {.fragment}
-Governance is the foundation every data science practice sits on — it shapes *what* data is available, *how* algorithms may be used, and *how* platforms are configured and secured.
-:::
 
 ## A Motivating Research Question
 
@@ -61,13 +39,12 @@ Governance is the foundation every data science practice sits on — it shapes *
 ::: {.fragment}
 - Hold this question in mind throughout the day.
 - At the end, we'll revisit it and sketch what a research project addressing it would actually require — across **Governance**, **Data**, **Algorithm**, and **Platform**.
+- 10 minutes of small-group discussion followed by 10 minutes of report-back and reflection.
 :::
 
 # Part 1: Governance & Data
 
 {{< include modules/01-governance.qmd >}}
-
-## Break (10 minutes)
 
 {{< include modules/02-data.qmd >}}
 
@@ -77,11 +54,10 @@ Governance is the foundation every data science practice sits on — it shapes *
 
 {{< include modules/03-algorithm.qmd >}}
 
-## Break (10 minutes)
 
 {{< include modules/04-platform.qmd >}}
 
-# Wrap-Up
+# Discussion
 
 ## Revisiting: A Dementia Research Project Plan
 
@@ -104,7 +80,7 @@ Governance is the foundation every data science practice sits on — it shapes *
 
 ## Q&A
 
-Any questions?
+Thanks!Any Questions? 
 
 ## References
 

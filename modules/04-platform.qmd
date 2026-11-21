@@ -22,6 +22,11 @@
 
 - Centralise, store, and process large or linked datasets for analytics.
 - Cloud data warehouses / lakehouses: **Snowflake**, **Databricks**, Azure Synapse, AWS Redshift.
+
+| ![Snowflake](../logo/snowflake.svg){height="36"} | ![Databricks](../logo/databricks.svg){height="36"} | ![Microsoft Fabric](../logo/microsoft-fabric.svg){height="36"} | ![AWS](../logo/aws.svg){height="36"} |
+|:---:|:---:|:---:|:---:|
+| Snowflake | Databricks | Microsoft Fabric | AWS |
+
 - Secure research environments: Stats NZ Data Lab infrastructure — links back to the **Five Safes** framework (Module 2).
 - General trend: a shift from on-premise servers to cloud/hybrid platforms, balancing **cost**, **scale**, and **data sovereignty/security** requirements.
 
@@ -34,6 +39,9 @@
   - **Python** — strong in ML/AI, automation, integration with cloud platforms.
 - **SQL** remains the lingua franca for querying data warehouses.
 - Choice often depends on team legacy, licensing, and the analytics platform already in use.
+  - **Posit** provides tools for developing and sharing R and Python work.
+
+  ![Posit](../logo/posit.svg){height="36"}
 
 ---
 
@@ -54,11 +62,3 @@
 - There is no single "right stack" — agencies choose based on governance requirements, cost, skills, and existing systems.
 
 ---
-
-## Quick Reflection
-
-::: {.fragment}
-**Prompt:** Think of a public sector analytics project you've heard of or can imagine. Which platform choices (version control, warehouse, language, dashboard) would you expect it to use, and why?
-:::
-
-- **2–3 min individual think time** — no formal report-back; just a quick way to connect today's four components before we wrap up.
