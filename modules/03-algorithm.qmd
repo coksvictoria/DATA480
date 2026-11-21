@@ -1,6 +1,12 @@
 
-# Emerging Data Science in Government: Synthetic Data and Explainable AI
+# Algorithm: Emerging Methods — Synthetic Data & XAI
 
+## Where This Fits in the Framework
+
+- **Algorithm** is the second practice component — once trustworthy **Data** is accessible, agencies apply methods to generate value from it.
+- Synthetic data and XAI are two emerging algorithmic responses to the governance challenges raised in Module 1: privacy-preserving data sharing, and transparent, accountable decision-making.
+
+---
 
 ## Synthetic Data: Definition & Terminology
 
@@ -101,7 +107,6 @@ XAI is essential in the public sector to ensure transparency, accountability, an
 
 ## Group Discussion: Should an ACC Claim Decision Be Automated?
 
-
 ::: {.fragment}
 **Hypothetical scenario:** A government team asks you to build an automated model to assess ACC claim applications. Do not assume that full automation is appropriate: decide what role, if any, a model should have.
 :::
@@ -115,6 +120,4 @@ XAI is essential in the public sector to ensure transparency, accountability, an
 - What data, labels, and evaluation would you require? How would you test errors and outcomes for different groups, including people poorly represented in historical data?
 - Where could synthetic data help—and what could it not prove about privacy or real-world performance? What meaningful explanation, human review, reasons, and appeal would claimants need?
 :::
-
-
  

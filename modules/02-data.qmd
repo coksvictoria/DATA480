@@ -1,4 +1,11 @@
-# Research Data Landscape in New Zealand
+# Data: Research Data Landscape in New Zealand
+
+## Where This Fits in the Framework
+
+- **Data** is the first of the three practice components (Data + Algorithm + Platform), sitting on top of the governance foundations from Module 1.
+- Governance in action: access to the IDI is only possible because of the **Five Safes** framework — governance shapes *what* data exists and *how* it can be used.
+
+---
 
 ## Research Data Repositories in Aotearoa NZ
 
@@ -94,3 +101,5 @@ Access to the IDI is carefully controlled, following the **Stats NZ “Five Safe
 - Which IDI sources would you need to check are available and suitable? What could be missing, delayed, mislinked, or measured only as an administrative record?
 - How would you avoid overclaiming causation, and how would you involve affected communities in interpreting and using the findings?
 :::
+
+-

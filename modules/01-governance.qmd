@@ -1,4 +1,15 @@
-# Privacy, Ethics, and Data Sovereignty in Aotearoa Research
+# Governance: Foundations for Data Science in the Public Sector
+
+## Where This Fits in the Framework
+
+- **Governance** is the foundation underneath every other component of public sector data science — **Data**, **Algorithm**, and **Platform**.
+- No dataset, model, or tool can be trusted without it.
+- Three strands covered in this module:
+  - **Privacy law** — individual rights and legal obligations
+  - **Māori Data Sovereignty** — collective rights and authority over Māori data
+  - **Data governance** — the policies, roles, and processes that make data trustworthy across its lifecycle
+
+---
 
 ## Why Privacy, Ethics, and Data Sovereignty Matter
 
@@ -63,17 +74,13 @@ Source: [Office of the Privacy Commissioner — NZ Privacy Principles](https://w
 ::: notes
 💬 *Prompt:* Which of these principles are most relevant to Māori Data Sovereignty, especially where data is stored offshore or linked using unique identifiers?
 :::
-
 ---
 
 ## Reflecting on the 13 IPPs
 
 - The 13 IPPs form the **foundation of the Privacy Act 2020**.  
-
-
 - They are largely **individual-centric** — focused on individual rights, not collective data control.  
-- This raises key questions for Māori contexts:  Can privacy laws evolve to recognise **collective data sovereignty**? [@watts2025protecting] 
-
+- This raises key questions for Māori contexts: Can privacy laws evolve to recognise **collective data sovereignty**? [@watts2025protecting]
 
 ---
 
@@ -110,6 +117,22 @@ Source: [Office of the Privacy Commissioner — NZ Privacy Principles](https://w
 
 ---
 
+## Data Governance in the Public Sector
+
+- **Data governance** = the policies, roles, and processes that manage data as a trusted, strategic asset across its lifecycle — collection, storage, access, use, and disposal [@wang2024iccae].  
+- It operationalises privacy law and Māori Data Sovereignty into everyday practice, and underpins the **Data**, **Algorithm**, and **Platform** components covered in the rest of this workshop.  
+- Key mechanisms in Aotearoa New Zealand's public sector:  
+  - **Government Chief Data Steward** (Stats NZ) — sets direction, standards, and capability for data leadership across agencies.  
+  - **Algorithm Charter for Aotearoa New Zealand** — agencies commit to transparency, partnership, and human oversight when using algorithms.  
+  - **Agency-level data governance** — data stewards, data classification, and access/approval processes (e.g. the IDI's Five Safes, covered in Module 2).  
+  - **Data Protection and Use Policy (DPUP)** — social sector guidance for ethical, trustworthy data sharing between agencies.  
+
+::: {.fragment}
+- Good governance doesn't just make data **compliant** — it makes data, models, and platforms **trustworthy** [@wang2024iccae].
+:::
+
+---
+
 ## Group Discussion: Should Aotearoa Have a Universal Person Identifier?
 
 ::: {.fragment}
@@ -125,5 +148,3 @@ Source: [Office of the Privacy Commissioner — NZ Privacy Principles](https://w
 - Weigh more reliable matching and service continuity against misidentification, surveillance, function creep, and the consequences of a breach.
 - What Māori authority and governance, legal limits, oversight, and practical alternatives must be considered before any decision?
 :::
-
-

@@ -9,16 +9,20 @@
 
 ## Overview
 
-This repository contains the **Quarto presentation materials** for the DATA480-STAT480 workshop, covering three modules:
+This repository contains the **Quarto presentation materials** for the DATA480-STAT480 workshop on **data science practice in the public sector**.
 
-1. **Privacy Law and Māori Data Sovereignty**  
-2. **Research Data Landscape in Aotearoa New Zealand**  
-3. **Emerging Data Science in Government: Synthetic Data and Explainable AI (XAI)**  
+The workshop frames public sector data science around three practice components — **Data**, **Algorithm**, and **Platform** — underpinned by **Governance**:
+
+1. **Governance** — Privacy Law, Māori Data Sovereignty & Data Governance  
+2. **Data** — Research Data Landscape in Aotearoa New Zealand  
+3. **Algorithm** — Emerging Methods: Synthetic Data & Explainable AI (XAI)  
+4. **Platform** — Tools & Infrastructure in Government (version control/CI-CD, data warehousing, programming languages, dashboarding)
 
 The workshop aims to give students a practical understanding of:
 
-- Ethical and legal considerations in data use.  
+- Ethical, legal, and governance considerations that underpin all data use (Privacy Act 2020, Māori Data Sovereignty, data governance frameworks).  
 - Key public datasets and research infrastructure in New Zealand (e.g., Stats NZ IDI).  
-- Advanced data science methods, including synthetic data and explainable AI, applied in government contexts.
+- Advanced data science methods, including synthetic data and explainable AI, applied in government contexts.  
+- The platforms and tooling commonly used across government agencies (e.g., GitHub/Azure DevOps, Snowflake/Databricks, R/Python, Power BI/Shiny).
 
 ---

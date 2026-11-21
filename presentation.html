@@ -144,6 +144,9 @@
       margin-right: 0; 
     }
   </style>
+  <script src="presentation_files/libs/quarto-diagram/mermaid.min.js"></script>
+  <script src="presentation_files/libs/quarto-diagram/mermaid-init.js"></script>
+  <link href="presentation_files/libs/quarto-diagram/mermaid.css" rel="stylesheet">
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -165,24 +168,80 @@ Alex.Wang@vuw.ac.nz
 </div>
 
 </section>
+<section>
 <section id="workshop-outline" class="title-slide slide level1 center">
 <h1>Workshop Outline</h1>
+<p>Public sector data science practice = <strong>Data + Algorithm + Platform</strong>, underpinned by <strong>Governance</strong>.</p>
 <ul>
-<li class="fragment">Module 1: Privacy Law &amp; Māori Data Sovereignty</li>
-<li class="fragment">Module 2: Research Data Landscape in New Zealand</li>
-<li class="fragment">Module 3: Emerging Methods: Synthetic Data &amp; XAI</li>
+<li class="fragment"><strong>Part 1:</strong> Intro → Module 1: Governance → Module 2: Data</li>
+<li class="fragment"><strong>15-minute break</strong></li>
+<li class="fragment"><strong>Part 2:</strong> Module 3: Algorithm → Module 4: Platform → Wrap-up</li>
 </ul>
 <div class="fragment">
 <div style="font-size: 0.8em">
-<p>Each module: 30 min lecture + 10 min group discussion + 10 min report-back +10 min break</p>
+<p>Modules 1–3: 30 min lecture + 10 min group discussion + 10 min report-back + 10 min break Module 4: ~15 min brief overview, no formal group exercise</p>
 </div>
 </div>
 </section>
+<section id="a-framework-for-public-sector-data-science" class="slide level2">
+<h2>A Framework for Public Sector Data Science</h2>
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart BT
+    G["Governance&lt;br/&gt;(Privacy Law · Māori Data Sovereignty · Data Governance)"]
+    D[Data]
+    Alg[Algorithm]
+    P[Platform]
+    G --&gt; D
+    G --&gt; Alg
+    G --&gt; P
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<div class="fragment">
+<p>Governance is the foundation every data science practice sits on — it shapes <em>what</em> data is available, <em>how</em> algorithms may be used, and <em>how</em> platforms are configured and secured.</p>
+</div>
+</section>
+<section id="a-motivating-research-question" class="slide level2">
+<h2>A Motivating Research Question</h2>
+<div class="fragment">
+<p><strong>Scenario:</strong> As Aotearoa New Zealand’s population ages, policymakers want to know: <em>what are the emerging risk and protective factors for dementia, and how might we identify them using population data?</em></p>
+</div>
+<div class="fragment">
+<ul>
+<li class="fragment">Hold this question in mind throughout the day.</li>
+<li class="fragment">At the end, we’ll revisit it and sketch what a research project addressing it would actually require — across <strong>Governance</strong>, <strong>Data</strong>, <strong>Algorithm</strong>, and <strong>Platform</strong>.</li>
+</ul>
+</div>
+</section></section>
+<section id="part-1-governance-data" class="title-slide slide level1 center">
+<h1>Part 1: Governance &amp; Data</h1>
+
+</section>
 
 <section>
-<section id="privacy-ethics-and-data-sovereignty-in-aotearoa-research" class="title-slide slide level1 center">
-<h1>Privacy, Ethics, and Data Sovereignty in Aotearoa Research</h1>
+<section id="governance-foundations-for-data-science-in-the-public-sector" class="title-slide slide level1 center">
+<h1>Governance: Foundations for Data Science in the Public Sector</h1>
 
+</section>
+<section id="where-this-fits-in-the-framework" class="slide level2">
+<h2>Where This Fits in the Framework</h2>
+<ul>
+<li class="fragment"><strong>Governance</strong> is the foundation underneath every other component of public sector data science — <strong>Data</strong>, <strong>Algorithm</strong>, and <strong>Platform</strong>.</li>
+<li class="fragment">No dataset, model, or tool can be trusted without it.</li>
+<li class="fragment">Three strands covered in this module:
+<ul>
+<li class="fragment"><strong>Privacy law</strong> — individual rights and legal obligations</li>
+<li class="fragment"><strong>Māori Data Sovereignty</strong> — collective rights and authority over Māori data</li>
+<li class="fragment"><strong>Data governance</strong> — the policies, roles, and processes that make data trustworthy across its lifecycle</li>
+</ul></li>
+</ul>
 </section>
 <section id="why-privacy-ethics-and-data-sovereignty-matter" class="slide level2">
 <h2>Why Privacy, Ethics, and Data Sovereignty Matter</h2>
@@ -374,10 +433,11 @@ Alex.Wang@vuw.ac.nz
 <section id="reflecting-on-the-13-ipps" class="slide level2">
 <h2>Reflecting on the 13 IPPs</h2>
 <ul>
-<li class="fragment"><p>The 13 IPPs form the <strong>foundation of the Privacy Act 2020</strong>.</p></li>
-<li class="fragment"><p>They are largely <strong>individual-centric</strong> — focused on individual rights, not collective data control.<br>
-</p></li>
-<li class="fragment"><p>This raises key questions for Māori contexts: Can privacy laws evolve to recognise <strong>collective data sovereignty</strong>? <span class="citation" data-cites="watts2025protecting">(<a href="#/references" role="doc-biblioref" onclick="">Watts and Kukutai 2025</a>)</span></p></li>
+<li class="fragment">The 13 IPPs form the <strong>foundation of the Privacy Act 2020</strong>.<br>
+</li>
+<li class="fragment">They are largely <strong>individual-centric</strong> — focused on individual rights, not collective data control.<br>
+</li>
+<li class="fragment">This raises key questions for Māori contexts: Can privacy laws evolve to recognise <strong>collective data sovereignty</strong>? <span class="citation" data-cites="watts2025protecting">(<a href="#/references" role="doc-biblioref" onclick="">Watts and Kukutai 2025</a>)</span></li>
 </ul>
 </section>
 <section id="māori-data-sovereignty-what-it-means" class="slide level2">
@@ -420,6 +480,30 @@ Alex.Wang@vuw.ac.nz
 </ul></li>
 </ul>
 </section>
+<section id="data-governance-in-the-public-sector" class="slide level2">
+<h2>Data Governance in the Public Sector</h2>
+<ul>
+<li class="fragment"><strong>Data governance</strong> = the policies, roles, and processes that manage data as a trusted, strategic asset across its lifecycle — collection, storage, access, use, and disposal <span class="citation" data-cites="wang2024iccae">(<a href="#/references" role="doc-biblioref" onclick="">Wang, Simpson, et al. 2024</a>)</span>.<br>
+</li>
+<li class="fragment">It operationalises privacy law and Māori Data Sovereignty into everyday practice, and underpins the <strong>Data</strong>, <strong>Algorithm</strong>, and <strong>Platform</strong> components covered in the rest of this workshop.<br>
+</li>
+<li class="fragment">Key mechanisms in Aotearoa New Zealand’s public sector:
+<ul>
+<li class="fragment"><strong>Government Chief Data Steward</strong> (Stats NZ) — sets direction, standards, and capability for data leadership across agencies.<br>
+</li>
+<li class="fragment"><strong>Algorithm Charter for Aotearoa New Zealand</strong> — agencies commit to transparency, partnership, and human oversight when using algorithms.<br>
+</li>
+<li class="fragment"><strong>Agency-level data governance</strong> — data stewards, data classification, and access/approval processes (e.g.&nbsp;the IDI’s Five Safes, covered in Module 2).<br>
+</li>
+<li class="fragment"><strong>Data Protection and Use Policy (DPUP)</strong> — social sector guidance for ethical, trustworthy data sharing between agencies.</li>
+</ul></li>
+</ul>
+<div class="fragment">
+<ul>
+<li class="fragment">Good governance doesn’t just make data <strong>compliant</strong> — it makes data, models, and platforms <strong>trustworthy</strong> <span class="citation" data-cites="wang2024iccae">(<a href="#/references" role="doc-biblioref" onclick="">Wang, Simpson, et al. 2024</a>)</span>.</li>
+</ul>
+</div>
+</section>
 <section id="group-discussion-should-aotearoa-have-a-universal-person-identifier" class="slide level2">
 <h2>Group Discussion: Should Aotearoa Have a Universal Person Identifier?</h2>
 <div class="fragment">
@@ -451,9 +535,16 @@ Alex.Wang@vuw.ac.nz
 <h2>Break (10 minutes)</h2>
 </section></section>
 <section>
-<section id="research-data-landscape-in-new-zealand" class="title-slide slide level1 center">
-<h1>Research Data Landscape in New Zealand</h1>
+<section id="data-research-data-landscape-in-new-zealand" class="title-slide slide level1 center">
+<h1>Data: Research Data Landscape in New Zealand</h1>
 
+</section>
+<section id="where-this-fits-in-the-framework-1" class="slide level2">
+<h2>Where This Fits in the Framework</h2>
+<ul>
+<li class="fragment"><strong>Data</strong> is the first of the three practice components (Data + Algorithm + Platform), sitting on top of the governance foundations from Module 1.</li>
+<li class="fragment">Governance in action: access to the IDI is only possible because of the <strong>Five Safes</strong> framework — governance shapes <em>what</em> data exists and <em>how</em> it can be used.</li>
+</ul>
 </section>
 <section id="research-data-repositories-in-aotearoa-nz" class="slide level2">
 <h2>Research Data Repositories in Aotearoa NZ</h2>
@@ -574,14 +665,31 @@ Alex.Wang@vuw.ac.nz
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-</section>
-<section id="break-10-minutes-1" class="slide level2">
-<h2>Break (10 minutes)</h2>
+<ul>
+<li class="fragment"></li>
+</ul>
 </section></section>
-<section>
-<section id="emerging-data-science-in-government-synthetic-data-and-explainable-ai" class="title-slide slide level1 center">
-<h1>Emerging Data Science in Government: Synthetic Data and Explainable AI</h1>
+<section id="break-15-minutes" class="title-slide slide level1 center">
+<h1>Break (15 minutes)</h1>
 
+</section>
+
+<section id="part-2-algorithm-platform" class="title-slide slide level1 center">
+<h1>Part 2: Algorithm &amp; Platform</h1>
+
+</section>
+
+<section>
+<section id="algorithm-emerging-methods-synthetic-data-xai" class="title-slide slide level1 center">
+<h1>Algorithm: Emerging Methods — Synthetic Data &amp; XAI</h1>
+
+</section>
+<section id="where-this-fits-in-the-framework-2" class="slide level2">
+<h2>Where This Fits in the Framework</h2>
+<ul>
+<li class="fragment"><strong>Algorithm</strong> is the second practice component — once trustworthy <strong>Data</strong> is accessible, agencies apply methods to generate value from it.</li>
+<li class="fragment">Synthetic data and XAI are two emerging algorithmic responses to the governance challenges raised in Module 1: privacy-preserving data sharing, and transparent, accountable decision-making.</li>
+</ul>
 </section>
 <section id="synthetic-data-definition-terminology" class="slide level2">
 <h2>Synthetic Data: Definition &amp; Terminology</h2>
@@ -734,6 +842,128 @@ Synthetic tabular data generation learns the joint distribution of mixed continu
           display:block!important;
       }</style></aside>
 </section>
+<section id="break-10-minutes-1" class="slide level2">
+<h2>Break (10 minutes)</h2>
+</section></section>
+<section>
+<section id="platform-tools-infrastructure-in-government" class="title-slide slide level1 center">
+<h1>Platform: Tools &amp; Infrastructure in Government</h1>
+
+</section>
+<section id="where-this-fits-in-the-framework-3" class="slide level2">
+<h2>Where This Fits in the Framework</h2>
+<ul>
+<li class="fragment"><strong>Platform</strong> is the practical tooling layer that makes Data + Algorithm + Governance work day-to-day inside an agency.</li>
+<li class="fragment">This is a <strong>brief, practical tour</strong> — not exhaustive. Tool choice varies by agency, project, security tier, and legacy systems.</li>
+</ul>
+</section>
+<section id="version-control-cicd" class="slide level2">
+<h2>Version Control &amp; CI/CD</h2>
+<ul>
+<li class="fragment">Why it matters in government: <strong>reproducibility</strong>, <strong>audit trail</strong>, peer review, and collaboration across teams and agencies.</li>
+<li class="fragment">Git-based version control: <strong>GitHub</strong>, <strong>GitLab</strong>, <strong>Azure Repos</strong></li>
+<li class="fragment">CI/CD pipelines automate testing, code review, and deployment of data/analytics code:
+<ul>
+<li class="fragment"><strong>GitHub Actions</strong>, <strong>Azure DevOps Pipelines</strong></li>
+</ul></li>
+<li class="fragment">Public sector nuance: version history and code review support the <strong>accountability</strong> and <strong>transparency</strong> obligations raised in Module 1 (e.g.&nbsp;Algorithm Charter commitments).</li>
+</ul>
+</section>
+<section id="data-warehousing-compute-platforms" class="slide level2">
+<h2>Data Warehousing &amp; Compute Platforms</h2>
+<ul>
+<li class="fragment">Centralise, store, and process large or linked datasets for analytics.</li>
+<li class="fragment">Cloud data warehouses / lakehouses: <strong>Snowflake</strong>, <strong>Databricks</strong>, Azure Synapse, AWS Redshift.</li>
+<li class="fragment">Secure research environments: Stats NZ Data Lab infrastructure — links back to the <strong>Five Safes</strong> framework (Module 2).</li>
+<li class="fragment">General trend: a shift from on-premise servers to cloud/hybrid platforms, balancing <strong>cost</strong>, <strong>scale</strong>, and <strong>data sovereignty/security</strong> requirements.</li>
+</ul>
+</section>
+<section id="programming-languages-analysis-tools" class="slide level2">
+<h2>Programming Languages &amp; Analysis Tools</h2>
+<ul>
+<li class="fragment"><strong>R</strong> and <strong>Python</strong> are the two dominant open-source languages in government data science:
+<ul>
+<li class="fragment"><strong>R</strong> — strong in statistics, survey/administrative data analysis, tidyverse ecosystem.</li>
+<li class="fragment"><strong>Python</strong> — strong in ML/AI, automation, integration with cloud platforms.</li>
+</ul></li>
+<li class="fragment"><strong>SQL</strong> remains the lingua franca for querying data warehouses.</li>
+<li class="fragment">Choice often depends on team legacy, licensing, and the analytics platform already in use.</li>
+</ul>
+</section>
+<section id="dashboarding-reporting" class="slide level2">
+<h2>Dashboarding &amp; Reporting</h2>
+<ul>
+<li class="fragment">Communicating findings to decision-makers is as important as the analysis itself.</li>
+<li class="fragment"><strong>Power BI</strong> — widely adopted across NZ government agencies for enterprise reporting; integrates with Azure/Microsoft 365.</li>
+<li class="fragment"><strong>Shiny</strong> (R) / Dash (Python) — interactive, code-first apps for bespoke analytical tools and prototypes.</li>
+<li class="fragment">Choice depends on audience (executives vs.&nbsp;analysts), licensing, and long-term maintainability.</li>
+</ul>
+</section>
+<section id="putting-it-all-together" class="slide level2">
+<h2>Putting It All Together</h2>
+<ul>
+<li class="fragment">A typical government data science pipeline:
+<ul>
+<li class="fragment">Version-controlled code → CI/CD → data warehouse/lakehouse → R/Python analysis → synthetic data/XAI methods where needed → Power BI/Shiny dashboard → decision-maker.</li>
+</ul></li>
+<li class="fragment"><strong>Governance</strong> (Module 1) shapes every step: who can access what, how it’s approved, and how outputs are checked before release.</li>
+<li class="fragment">There is no single “right stack” — agencies choose based on governance requirements, cost, skills, and existing systems.</li>
+</ul>
+</section>
+<section id="quick-reflection" class="slide level2">
+<h2>Quick Reflection</h2>
+<div class="fragment">
+<p><strong>Prompt:</strong> Think of a public sector analytics project you’ve heard of or can imagine. Which platform choices (version control, warehouse, language, dashboard) would you expect it to use, and why?</p>
+</div>
+<ul>
+<li class="fragment"><strong>2–3 min individual think time</strong> — no formal report-back; just a quick way to connect today’s four components before we wrap up.</li>
+</ul>
+</section></section>
+<section>
+<section id="wrap-up" class="title-slide slide level1 center">
+<h1>Wrap-Up</h1>
+
+</section>
+<section id="revisiting-a-dementia-research-project-plan" class="slide level2">
+<h2>Revisiting: A Dementia Research Project Plan</h2>
+<aside class="notes">
+<p><strong>Recall:</strong> <em>What are the emerging risk and protective factors for dementia in an ageing Aotearoa population?</em></p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<ul>
+<li class="fragment">In groups, sketch a project plan touching all four components covered today:
+<ul>
+<li class="fragment"><strong>Governance</strong> — what approvals, ethics, and Māori consultation would this need, given the sensitivity of health data?</li>
+<li class="fragment"><strong>Data</strong> — which data sources could help answer this (e.g.&nbsp;IDI linking health, social, and demographic data)?</li>
+<li class="fragment"><strong>Algorithm</strong> — what methods might you use, and would synthetic data or XAI play a role?</li>
+<li class="fragment"><strong>Platform</strong> — what tools and infrastructure would the project team need?</li>
+</ul></li>
+<li class="fragment"><strong>10 min discussion:</strong> draft a short project plan covering all four components.</li>
+<li class="fragment"><strong>10 min report-back:</strong> share your plan; identify the biggest risk or open question.</li>
+</ul>
+<aside class="notes">
+<p>💬 This is a synthesis exercise — there’s no single correct answer. Listen for students connecting governance constraints to data choices, and algorithm/platform choices to practical delivery.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
 <section id="qa" class="slide level2">
 <h2>Q&amp;A</h2>
 <p>Any questions?</p>
@@ -798,6 +1028,9 @@ Wang, Alex X, Binh P Nguyen, Tom Elliott, James F Mbinta, Andrew Sporle, and Col
 </div>
 <div id="ref-wang2025genai" class="csl-entry" role="listitem">
 Wang, Alex X, Binh P Nguyen, and Colin R Simpson. 2025. <span>“Generative <span>AI</span> for Tabular Data Synthesis.”</span> <em>Pacific-Asia Conference on Knowledge Discovery and Data Mining</em>.
+</div>
+<div id="ref-wang2024iccae" class="csl-entry" role="listitem">
+Wang, Alex X, Colin R Simpson, and Binh P Nguyen. 2024. <span>“Enhancing Data Governance Through Data-Centric AI: Case Study in New Zealand Government Sector.”</span> <em>2024 16th International Conference on Computer and Automation Engineering (ICCAE)</em>, 64–69.
 </div>
 <div id="ref-watts2025protecting" class="csl-entry" role="listitem">
 Watts, David, and Tahu Kukutai. 2025. <em>Protecting m<span>ā</span>ori Data: Can a Privacy Code of Practice Provide a Partial Solution?</em>

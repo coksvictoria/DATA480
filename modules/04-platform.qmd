@@ -1,0 +1,64 @@
+
+# Platform: Tools & Infrastructure in Government
+
+## Where This Fits in the Framework
+
+- **Platform** is the practical tooling layer that makes Data + Algorithm + Governance work day-to-day inside an agency.
+- This is a **brief, practical tour** — not exhaustive. Tool choice varies by agency, project, security tier, and legacy systems.
+
+---
+
+## Version Control & CI/CD
+
+- Why it matters in government: **reproducibility**, **audit trail**, peer review, and collaboration across teams and agencies.
+- Git-based version control: **GitHub**, **GitLab**, **Azure Repos**
+- CI/CD pipelines automate testing, code review, and deployment of data/analytics code:
+  - **GitHub Actions**, **Azure DevOps Pipelines**
+- Public sector nuance: version history and code review support the **accountability** and **transparency** obligations raised in Module 1 (e.g. Algorithm Charter commitments).
+
+---
+
+## Data Warehousing & Compute Platforms
+
+- Centralise, store, and process large or linked datasets for analytics.
+- Cloud data warehouses / lakehouses: **Snowflake**, **Databricks**, Azure Synapse, AWS Redshift.
+- Secure research environments: Stats NZ Data Lab infrastructure — links back to the **Five Safes** framework (Module 2).
+- General trend: a shift from on-premise servers to cloud/hybrid platforms, balancing **cost**, **scale**, and **data sovereignty/security** requirements.
+
+---
+
+## Programming Languages & Analysis Tools
+
+- **R** and **Python** are the two dominant open-source languages in government data science:
+  - **R** — strong in statistics, survey/administrative data analysis, tidyverse ecosystem.
+  - **Python** — strong in ML/AI, automation, integration with cloud platforms.
+- **SQL** remains the lingua franca for querying data warehouses.
+- Choice often depends on team legacy, licensing, and the analytics platform already in use.
+
+---
+
+## Dashboarding & Reporting
+
+- Communicating findings to decision-makers is as important as the analysis itself.
+- **Power BI** — widely adopted across NZ government agencies for enterprise reporting; integrates with Azure/Microsoft 365.
+- **Shiny** (R) / Dash (Python) — interactive, code-first apps for bespoke analytical tools and prototypes.
+- Choice depends on audience (executives vs. analysts), licensing, and long-term maintainability.
+
+---
+
+## Putting It All Together
+
+- A typical government data science pipeline:
+  - Version-controlled code → CI/CD → data warehouse/lakehouse → R/Python analysis → synthetic data/XAI methods where needed → Power BI/Shiny dashboard → decision-maker.
+- **Governance** (Module 1) shapes every step: who can access what, how it's approved, and how outputs are checked before release.
+- There is no single "right stack" — agencies choose based on governance requirements, cost, skills, and existing systems.
+
+---
+
+## Quick Reflection
+
+::: {.fragment}
+**Prompt:** Think of a public sector analytics project you've heard of or can imagine. Which platform choices (version control, warehouse, language, dashboard) would you expect it to use, and why?
+:::
+
+- **2–3 min individual think time** — no formal report-back; just a quick way to connect today's four components before we wrap up.

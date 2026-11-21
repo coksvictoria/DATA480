@@ -20,28 +20,87 @@ execute:
 
 # Workshop Outline
 
-- Module 1: Privacy Law & Māori Data Sovereignty
-- Module 2: Research Data Landscape in New Zealand
-- Module 3: Emerging Methods: Synthetic Data & XAI
+Public sector data science practice = **Data + Algorithm + Platform**, underpinned by **Governance**.
+
+- **Part 1:** Intro → Module 1: Governance → Module 2: Data
+- **15-minute break**
+- **Part 2:** Module 3: Algorithm → Module 4: Platform → Wrap-up
 
 ::: {.fragment}
 <div style="font-size: 0.8em">
 
-Each module: 30 min lecture + 10 min group discussion + 10 min report-back +10 min break
+Modules 1–3: 30 min lecture + 10 min group discussion + 10 min report-back + 10 min break
+Module 4: ~15 min brief overview, no formal group exercise
 
 </div>
 :::
 
+## A Framework for Public Sector Data Science
 
-{{< include modules/01-privacy-maori.qmd >}}
+```{mermaid}
+flowchart BT
+    G["Governance<br/>(Privacy Law · Māori Data Sovereignty · Data Governance)"]
+    D[Data]
+    Alg[Algorithm]
+    P[Platform]
+    G --> D
+    G --> Alg
+    G --> P
+```
+
+::: {.fragment}
+Governance is the foundation every data science practice sits on — it shapes *what* data is available, *how* algorithms may be used, and *how* platforms are configured and secured.
+:::
+
+## A Motivating Research Question
+
+::: {.fragment}
+**Scenario:** As Aotearoa New Zealand's population ages, policymakers want to know: *what are the emerging risk and protective factors for dementia, and how might we identify them using population data?*
+:::
+
+::: {.fragment}
+- Hold this question in mind throughout the day.
+- At the end, we'll revisit it and sketch what a research project addressing it would actually require — across **Governance**, **Data**, **Algorithm**, and **Platform**.
+:::
+
+# Part 1: Governance & Data
+
+{{< include modules/01-governance.qmd >}}
 
 ## Break (10 minutes)
 
-{{< include modules/02-data-landscape.qmd >}}
+{{< include modules/02-data.qmd >}}
+
+# Break (15 minutes)
+
+# Part 2: Algorithm & Platform
+
+{{< include modules/03-algorithm.qmd >}}
 
 ## Break (10 minutes)
 
-{{< include modules/03-synthetic-xai.qmd >}}
+{{< include modules/04-platform.qmd >}}
+
+# Wrap-Up
+
+## Revisiting: A Dementia Research Project Plan
+
+::: notes
+**Recall:** *What are the emerging risk and protective factors for dementia in an ageing Aotearoa population?*
+:::
+
+- In groups, sketch a project plan touching all four components covered today:
+  - **Governance** — what approvals, ethics, and Māori consultation would this need, given the sensitivity of health data?
+  - **Data** — which data sources could help answer this (e.g. IDI linking health, social, and demographic data)?
+  - **Algorithm** — what methods might you use, and would synthetic data or XAI play a role?
+  - **Platform** — what tools and infrastructure would the project team need?
+
+- **10 min discussion:** draft a short project plan covering all four components.
+- **10 min report-back:** share your plan; identify the biggest risk or open question.
+
+::: notes
+💬 This is a synthesis exercise — there's no single correct answer. Listen for students connecting governance constraints to data choices, and algorithm/platform choices to practical delivery.
+:::
 
 ## Q&A
 
