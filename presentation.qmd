@@ -18,7 +18,22 @@ execute:
   cache: false
 ---
 
-# Workshop Outline
+# Welcome {visibility="hidden"}
+
+## By the end of this workshop you can…
+
+- **Explain** how privacy law, Māori Data Sovereignty and data governance shape research with population data in Aotearoa NZ.
+- **Describe** what the IDI holds and how access works (Five Safes), and **critique** its limits: coverage, linkage error, timeliness.
+- **Distinguish** predictive from causal questions, and judge what synthetic data and XAI can and cannot do.
+- **Outline** the platform needs and constraints of a secure research project.
+- **Integrate** 1–4 into a defensible plan for a real research question.
+
+::: notes
+⏱ 2 min. Link to the course: this workshop feeds directly into the research-proposal skills assessed later. Say that the last 35 minutes is a synthesis task and that a worksheet will be filled in progressively.
+:::
+
+
+## The framework we will use all day
 
 Public sector data science practice = **Data + Algorithm + Platform**, underpinned by **Governance**.
 
@@ -34,12 +49,19 @@ Public sector data science practice = **Data + Algorithm + Platform**, underpinn
 
 ::: {.fragment}
 **Scenario:** As Aotearoa New Zealand's population ages, policymakers want to know: *what are the emerging risk and protective factors for dementia, and how might we identify them using population data?*
+
 :::
 
-::: {.fragment}
-- Hold this question in mind throughout the day.
-- At the end, we'll revisit it and sketch what a research project addressing it would actually require — across **Governance**, **Data**, **Algorithm**, and **Platform**.
-- 10 minutes of small-group discussion followed by 10 minutes of report-back and reflection.
+
+::: {.checkpoint .fragment}
+**Project worksheet.** After each module you will spend ~2 minutes adding to a worksheet for this question. At the end, it becomes the skeleton of your group's project plan.
+
+Handout: `handout/worksheet.html`
+
+:::
+
+::: notes
+⏱ 3 min. Ask for a show of hands: who has family experience of dementia? (Optional and sensitive; offer to skip.) Remind students that real people and whānau sit behind the data they will be discussing.
 :::
 
 # Part 1: Governance & Data
@@ -48,7 +70,11 @@ Public sector data science practice = **Data + Algorithm + Platform**, underpinn
 
 {{< include modules/02-data.qmd >}}
 
-# Break (15 minutes)
+# Break (15 minutes) {.center}
+
+::: notes
+Suggested: put the framework diagram on screen. Ask students to think about which of the two modules so far has most constrained their dementia project.
+:::
 
 # Part 2: Algorithm & Platform
 
@@ -57,32 +83,108 @@ Public sector data science practice = **Data + Algorithm + Platform**, underpinn
 
 {{< include modules/04-platform.qmd >}}
 
-# Discussion
 
-## Revisiting: A Dementia Research Project Plan
+# Group Project: Dementia Research Plan
 
-::: notes
-**Recall:** *What are the emerging risk and protective factors for dementia in an ageing Aotearoa population?*
+## Design a Responsible Data Science Project
+
+::: {.activity}
+**In groups of 4–5 (10 min):** Develop a one-page dementia research plan using the four components.
 :::
 
-- In groups, sketch a project plan touching all four components covered today:
-  - **Governance** — what approvals, ethics, and Māori consultation would this need, given the sensitivity of health data?
-  - **Data** — which data sources could help answer this (e.g. IDI linking health, social, and demographic data)?
-  - **Algorithm** — what methods might you use, and would synthetic data or XAI play a role?
-  - **Platform** — what tools and infrastructure would the project team need?
+| **Component** | **Key Questions** |
+|:----------|:------------------|
+| **Governance** | What approvals, ethical considerations, and Māori data governance are needed? |
+| **Data** | Which datasets? How will dementia be identified and data quality assessed? |
+| **Algorithm** | Prediction or causal analysis? Which methods? |
+| **Platform** | Which tools and secure environments? How will results be released? |
 
-- **10 min discussion:** draft a short project plan covering all four components.
-- **10 min report-back:** share your plan; identify the biggest risk or open question.
-
-::: notes
-💬 This is a synthesis exercise — there's no single correct answer. Listen for students connecting governance constraints to data choices, and algorithm/platform choices to practical delivery.
+::: {.fragment}
+**Group sharing (10 min):** Each group presents its **proposed approach or biggest challenge** (≤2 min).
 :::
 
-## Q&A
+::: notes
+**Purpose:** Apply Governance, Data, Algorithm, and Platform to a realistic NZ public sector research problem.
 
-Thanks!Any Questions? 
+**Example — Predicting dementia risk:**
+- **Governance:** Consider ethics approval, Stats NZ access requirements, and meaningful Māori involvement from project design.
+- **Data:** Link hospital, pharmaceutical, demographic, and socioeconomic records in the IDI. Consider incomplete dementia identification and missing primary care diagnoses.
+- **Algorithm:** Develop a risk prediction model; use XAI to examine important predictors. Consider synthetic data for development, subject to privacy evaluation.
+- **Platform:** Analyse restricted data in an approved secure environment. Release only confidentiality-checked outputs.
 
-## References
+**Facilitation:**
+- Encourage groups to define a clear research question before choosing methods.
+- Ask whether their data and methods can actually answer that question.
+- Look for connections between governance requirements and technical decisions.
+- There is no single correct design; prioritise justification and feasibility.
 
-::: references
+**Discussion prompt:** What is the biggest barrier to delivering your proposed project responsibly?
+:::
+
+
+
+## Q&A {.center}
+
+### Thank you! Any questions?
+
+::: {.fragment}
+**Have an innovative idea or interested in pursuing a PhD?**
+
+Let's connect!
+:::
+
+::: {.fragment}
+[Alex.Wang@vuw.ac.nz](mailto:Alex.Wang@vuw.ac.nz) ·
+[LinkedIn](https://www.linkedin.com/in/coksvictoria/) ·
+:::
+
+
+
+## Useful Links & Interactive Tools {visibility="uncounted"}
+
+- **[IDI Search App](https://idisearch.terourou.org/)** — Explore IDI datasets, variables, and metadata.
+- **[Stats NZ: Data in the IDI](https://www.stats.govt.nz/integrated-data/integrated-data-infrastructure/data-in-the-idi/)** — Available data sources and access information.
+- **[Synthetic Data Playground](https://playground.scienxlab.org/)** — Experiment with synthetic datasets and machine learning.
+- **[Google What-If Tool](https://pair-code.github.io/what-if-tool/)** — Explore model behaviour, fairness, and counterfactuals.
+- **[SHAP Documentation](https://shap.readthedocs.io/)** — Interactive examples of explainable AI.
+
+::: notes
+Encourage students to explore these resources after the workshop.
+
+- **IDI Search:** Useful for planning research before applying for IDI access.
+- **Synthetic Data Playground:** Demonstrates ML using generated datasets; it is not a dedicated tabular synthetic-data generator.
+- **What-If Tool / SHAP:** Help illustrate model interpretation and evaluation.
+
+These tools are intended for learning and exploration. Do not upload sensitive government or IDI data to public websites.
+:::
+
+---
+
+## Further Reading {visibility="uncounted"}
+
+**Governance & Data**
+- Five Safes: @desai2016five
+- Māori Data Sovereignty: @kukutai2023maori; @maori_data_sovereignty
+- Indigenous Data Governance: @carroll2020care
+
+**Algorithms & Responsible AI**
+- Causal Inference: @hernan2020causal
+- Interpretable Machine Learning: @rudin2019stop
+- Synthetic Data in R: @nowok2016synthpop
+
+::: notes
+These readings provide theoretical and practical foundations for the four workshop components.
+
+**Suggested starting points:**
+- **Desai et al.:** Understanding the Five Safes framework.
+- **Kukutai and Carroll et al.:** Māori and Indigenous data governance.
+- **Hernán and Robins:** Distinguishing causal inference from prediction.
+- **Rudin:** The importance of interpretable models in high-stakes settings.
+- **Nowok et al.:** Practical synthetic data generation using R.
+:::
+
+
+# References {visibility="uncounted"}
+
+::: {#refs}
 :::

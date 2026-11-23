@@ -1,102 +1,30 @@
 # History files
-# History files
 .Rhistory
 .Rapp.history
 
-# Session Data files
+# Session data and user-specific files
 .RData
 .RDataTmp
-
-# User-specific files
-.Ruserdata
-
-# Example code in package build process
-*-Ex.R
-
-# Output files from R CMD build
-/*.tar.gz
-
-# Output files from R CMD check
-/*.Rcheck/
-
-# RStudio files
-.Rproj.user/
-
-# produced vignettes
-vignettes/*.html
-vignettes/*.pdf
-
-# OAuth2 token, see https://github.com/hadley/httr/releases/tag/v0.3
-.httr-oauth
-
-# knitr and R markdown default cache directories
-*_cache/
-/cache/
-
-# Temporary files created by R markdown
-*.utf8.md
-*.knit.md
-
-# R Environment Variables
-.Renviron
-
-# pkgdown site
-docs/
-
-# translation temp files
-po/*~
-
-# RStudio Connect folder
-rsconnect/
-
-
-# Session Data files
-.RData
-.RDataTmp
-
-# User-specific files
 .Ruserdata
 .log
 .tex
 .html
-
-# Example code in package build process
-*-Ex.R
-
-# Output files from R CMD build
-/*.tar.gz
-
-# Output files from R CMD check
-/*.Rcheck/
-
-# RStudio files
+.Renviron
+.httr-oauth
 .Rproj.user/
 
-# produced vignettes
+# R and R Markdown outputs
+*-Ex.R
+/*.tar.gz
+/*.Rcheck/
 vignettes/*.html
 vignettes/*.pdf
-
-# OAuth2 token, see https://github.com/hadley/httr/releases/tag/v0.3
-.httr-oauth
-
-# knitr and R markdown default cache directories
 *_cache/
 /cache/
-
-# Temporary files created by R markdown
 *.utf8.md
 *.knit.md
-
-# R Environment Variables
-.Renviron
-
-# pkgdown site
 docs/
-
-# translation temp files
 po/*~
-
-# RStudio Connect folder
 rsconnect/
 
 # Quarto
@@ -104,13 +32,10 @@ _render/
 *_files/
 *_cache/
 *.nb.html
-
+**/*.quarto_ipynb
+/.quarto/
 
 # Sensitive data / outputs
 figures/raw_data/
 Presentation/*.pdf
 Presentation/*.pptx
-
-
-/.quarto/
-**/*.quarto_ipynb

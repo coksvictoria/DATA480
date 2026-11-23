@@ -1,37 +1,71 @@
+
 # Governance: Foundations for Data Science in the Public Sector
 
-## Where This Fits in the Framework
+::: notes
+**Key message:** Governance underpins trustworthy public sector data science.
 
-- **Governance** is the foundation underneath every other component of public sector data science — **Data**, **Algorithm**, and **Platform**.
-- No dataset, model, or tool can be trusted without it.
-- Three strands covered in this module:
-  - **Privacy law** — individual rights and legal obligations
-  - **Māori Data Sovereignty** — collective rights and authority over Māori data
-  - **Data governance** — the policies, roles, and processes that make data trustworthy across its lifecycle
+- **Data:** Can we access, use, and trust the information?
+- **Algorithm:** Are models fair, explainable, and accountable?
+- **Platform:** Are systems secure and appropriately controlled?
+
+**Three foundations covered:**
+- **Privacy law:** Individual rights and legal obligations.
+- **Māori Data Sovereignty:** Māori authority and collective rights and interests.
+- **Data governance:** Policies, roles, and processes that put these into practice.
+
+**Example:** A government AI project needs lawful data access, appropriate Māori data governance, model oversight, and secure infrastructure.
+:::
 
 ---
 
-## Why Privacy, Ethics, and Data Sovereignty Matter
+## Why Privacy, Ethics & Data Sovereignty Matter
 
-- Protects individuals and communities from **misuse and harm** in data practices.  
-- **Ethics** ensures research is conducted with **respect, fairness, and informed consent**, safeguarding participants and relationships.  
-- For **Māori**, privacy extends beyond individuals to **collective rights** — a foundation of **Māori Data Sovereignty** [@kukutai2023maori].  
-- Upholding these principles is both a **legal duty** under the Privacy Act 2020 and an **ethical commitment** to **equity and responsibility** in research [@chamberlain2022future].  
-- Builds **trust, integrity, and accountability** in research and institutions. 
+- **Privacy** → Protects individuals from misuse of personal information.
+- **Ethics** → Promotes **fairness, respect, and responsible data use**.
+- **Māori Data Sovereignty** → Recognises **collective rights and Māori authority** over Māori data [@kukutai2023maori].
 
+::: {.fragment}
+**Together, they support trust, accountability, and responsible Data Science.**
+:::
+
+::: notes
+**Key message:** Legal compliance alone does not guarantee ethical or culturally appropriate data use.
+
+**Examples:**
+- **Privacy:** A researcher must have a lawful basis to access identifiable health records and protect them against unauthorised access.
+- **Ethics:** An AI model predicting welfare needs may reinforce existing inequalities if its training data reflects historical bias.
+- **Māori Data Sovereignty:** Research using Māori health data should consider Māori authority, governance, and collective benefit, even when individual privacy is protected.
+
+**Discussion:** Can a data science project be legally compliant but still cause harm?
+
+**Transition:** We begin with the legal foundation — New Zealand's Privacy Act 2020.
+:::
 
 ---
 
 ## Privacy Legal Foundations in Aotearoa New Zealand
 
-- **Privacy Act 2020** governs how personal information is collected, used, and shared [@privacyact2020].  
-- Replaced the 1993 Act to meet **digital and data-driven realities**.  
-- Applies to **all organisations** — public and private.  
-- Overseen by the **Office of the Privacy Commissioner**.  
-- Establishes **13 Information Privacy Principles (IPPs)** guiding fair and lawful handling of personal data — from collection to access.  
+- **Privacy Act 2020** → Governs the handling of **personal information** [@privacyact2020].
+- Replaced the **Privacy Act 1993**, strengthening protections for the digital age.
+- Applies broadly to **public and private sector agencies**, subject to exceptions.
+- Regulated by the **Office of the Privacy Commissioner**.
+- Establishes **13 Information Privacy Principles (IPPs)**, with an additional **IPP 3A** effective from 1 May 2026.
 
+::: notes
+**Key message:** The Privacy Act establishes the legal foundation for handling personal information in New Zealand.
 
----
+**Examples:**
+- **Government:** An agency collecting income or employment records must comply with applicable privacy requirements.
+- **Research:** A university using identifiable patient data must consider lawful collection, use, disclosure, and security.
+- **AI:** Training a model using personal information does not remove privacy obligations.
+
+**Important distinction:** The Act primarily protects information about identifiable individuals. Fully anonymised information generally falls outside its scope, although re-identification risks remain relevant.
+
+**2026 update:** IPP 3A introduces notification requirements for indirect collection, subject to exceptions.
+
+**Transition:** The 13 IPPs translate these legal obligations into practical rules for handling personal information.
+:::
+
 
 
 ## The 13 IPPs (1–7)
@@ -48,10 +82,23 @@
 | **Storage & Security** | 5 | Storage and security | Protect information from loss, misuse, or unauthorised access. |
 
 </div>
+
+
 ::: notes
-💬 *Prompt:* How might these principles apply when collecting data through surveys or social media scraping in Māori communities?
+**Key message:** IPPs 1–5 regulate how personal information is collected and protected.
+
+- **IPPs 1–4:** Collect necessary information, explain its purpose, and use fair collection methods.
+- **IPP 3A (2026):** Indirect collection generally requires notification, subject to exceptions.
+- **IPP 5:** Apply reasonable security safeguards.
+
+**Examples:**
+- **Surveys:** A diabetes study collects age, ethnicity, income, and health history. Researchers should justify why each variable is necessary and inform participants how their data will be used.
+- **Social media scraping:** Researchers collect public Facebook posts to analyse mental health attitudes. Public availability does not automatically permit unrestricted collection or reuse; fairness, notification, and applicable exceptions must be considered.
+- **Health records:** A university stores identifiable patient records for AI training. Encryption, role-based access, audit logs, and secure research environments help prevent unauthorised access.
+
+**Discussion:** Does individual consent necessarily mean collecting data from Māori communities is culturally appropriate?
 :::
----
+
 
 ## The 13 IPPs (8–13)
 
@@ -71,51 +118,108 @@
 Source: [Office of the Privacy Commissioner — NZ Privacy Principles](https://www.privacy.org.nz/privacy-principles/)
 </div>
 </div>
+
+
 ::: notes
-💬 *Prompt:* Which of these principles are most relevant to Māori Data Sovereignty, especially where data is stored offshore or linked using unique identifiers?
-:::
----
+**Key message:** IPPs 6–13 govern individual rights and the subsequent use, retention, and disclosure of information.
 
-## Reflecting on the 13 IPPs
+- **IPPs 6–7:** Individuals can request access to and correction of their information.
+- **IPPs 8–9:** Take reasonable steps to ensure accuracy and avoid unnecessary retention.
+- **IPPs 10–11:** Secondary use and disclosure require a permitted basis.
+- **IPP 12:** Overseas disclosure requires appropriate safeguards.
+- **IPP 13:** Restricts unique identifiers, with specific research provisions.
 
-- The 13 IPPs form the **foundation of the Privacy Act 2020**.  
+**Examples:**
+- **AI prediction (IPP 8):** A hospital predicts readmission risk using outdated diagnoses and incomplete clinical records. Poor data quality can produce inaccurate predictions and potentially disadvantage certain groups.
+- **IDI data linkage (IPPs 10 & 13):** Researchers link health, income, and education records to investigate diabetes risk. The research purpose, legal permissions, identifier handling, and disclosure controls must be assessed.
+- **Cloud storage (IPPs 5 & 12):** A university uses an overseas cloud provider to process patient data. Researchers must assess security, contractual safeguards, and whether the arrangement constitutes overseas disclosure.
+
+**Transition:** The Privacy Act primarily protects individuals, but population-level analysis can affect entire communities. Who should have authority over data about those communities?
+
 - They are largely **individual-centric** — focused on individual rights, not collective data control.  
 - This raises key questions for Māori contexts: Can privacy laws evolve to recognise **collective data sovereignty**? [@watts2025protecting]
 
----
-
-## Māori Data Sovereignty — What It Means
-- **Māori Data** = information about Māori people, communities, or resources  
-- Includes:  
-  • Data generated by Māori  
-  • Data about Māori (collected externally)  
-  • Data about Māori resources (land, language, environment)  
-- Sovereignty = rights over **ownership, governance, and use** [@maori_data_sovereignty]. 
-
-::: {.fragment}
-
-
-#### Guiding Principles
-
-- **Rangatiratanga** → authority over Māori data  
-- **Kaitiakitanga** → guardianship & stewardship  
-- **Manaakitanga** → respect, reciprocity, consent  
 :::
 
----
+
+
+
+## Māori Data Sovereignty — What It Means
+
+- **Māori Data** = Data about Māori people, communities, and resources.
+
+::: notes
+  - Data generated by Māori
+  - Data about Māori collected by others
+  - Data about Māori land, language, culture, and environment
+
+:::
+
+- **Māori Data Sovereignty** = Māori rights to exercise **authority, control, and self-determination** over Māori data.
+
+::: {.fragment}
+#### Guiding Principles — Te Mana Raraunga
+
+- **Rangatiratanga** → Authority and self-determination
+- **Whakapapa** → Relationships and context
+- **Whanaungatanga** → Obligations and accountability
+- **Kotahitanga** → Collective benefit
+- **Manaakitanga** → Respect and reciprocity
+- **Kaitiakitanga** → Guardianship and stewardship
+:::
+
+
+::: notes
+**Key message:** Protecting individual privacy does not necessarily address collective rights, governance, or community impacts.
+
+**Example — Māori diabetes risk prediction:**
+
+Researchers develop an AI model using linked health and socioeconomic records. The model identifies higher predicted diabetes risk among Māori communities.
+
+Even if individual records are protected and published findings are aggregated:
+- **Authority:** Were Māori involved in deciding the research purpose and how their data would be used?
+- **Representation:** Could the findings reinforce stereotypes if socioeconomic and historical contexts are ignored?
+- **Benefit:** Will the results improve Māori health services, or primarily benefit researchers?
+
+**Six principles — Te Mana Raraunga:**
+- **Rangatiratanga:** Māori authority over data decisions.
+- **Whakapapa:** Understand data origins, relationships, and context.
+- **Whanaungatanga:** Maintain relationships and accountability.
+- **Kotahitanga:** Support collective Māori benefit.
+- **Manaakitanga:** Ensure respectful and reciprocal data practices.
+- **Kaitiakitanga:** Provide responsible guardianship and governance.
+
+**Discussion:** Can an AI research project comply with the Privacy Act but still fail to respect Māori Data Sovereignty?
+
+**Takeaway:** Legal privacy compliance and Māori Data Sovereignty are complementary but distinct responsibilities.
+:::
+
+
 
 ## Data Governance in the Public Sector
 
-- **Data governance** = the policies, roles, and processes that manage data as a trusted, strategic asset across its lifecycle — collection, storage, access, use, and disposal [@wang2024iccae].  
-- It operationalises privacy law and Māori Data Sovereignty into everyday practice, and underpins the **Data**, **Algorithm**, and **Platform** components covered in the rest of this workshop.  
-- Key mechanisms in Aotearoa New Zealand's public sector:  
-  - **Government Chief Data Steward** (Stats NZ) — sets direction, standards, and capability for data leadership across agencies.  
-  - **Algorithm Charter for Aotearoa New Zealand** — agencies commit to transparency, partnership, and human oversight when using algorithms.  
-  - **Agency-level data governance** — data stewards, data classification, and access/approval processes (e.g. the IDI's Five Safes, covered in Module 2).  
+- **Data governance** = Policies, roles, and processes for managing data **responsibly and effectively** throughout its lifecycle [@wang2024iccae].
 
+- **Key mechanisms in New Zealand:**
+  - **Government Chief Data Steward** — leadership and standards.
+  - **Algorithm Charter** — transparency, fairness, and accountability.
+  - **Agency-level governance** — data stewardship, access controls, and oversight.
 
 ::: {.fragment}
-- Good governance doesn't just make data **compliant** — it makes data, models, and platforms **trustworthy** [@wang2024iccae].
+**From principles to practice:** Making **Data, Algorithms, and Platforms** trustworthy.
 :::
 
----
+::: notes
+**Key message:** Governance translates privacy, Māori Data Sovereignty, and ethical considerations into operational decisions.
+
+**Examples:**
+- **Chief Data Steward:** Stats NZ provides government-wide data leadership and promotes common standards.
+- **Algorithm Charter:** An agency developing an AI model should assess bias, explain its purpose, and ensure appropriate human oversight.
+- **Agency governance:** Researchers accessing IDI data must meet the Five Safes requirements, including approved projects, people, and secure access.
+
+**Māori Data Sovereignty:** Governance should enable meaningful Māori authority and participation in decisions about Māori data.
+
+**Takeaway:** Governance defines who makes decisions, under what rules, and who is accountable.
+:::
+
+

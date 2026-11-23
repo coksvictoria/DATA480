@@ -1,64 +1,139 @@
 
 # Platform: Tools & Infrastructure in Government
 
-## Where This Fits in the Framework
+::: notes
+**Key message:** Platforms provide the infrastructure needed to develop, deploy, and maintain Data Science solutions.
 
-- **Platform** is the practical tooling layer that makes Data + Algorithm + Governance work day-to-day inside an agency.
-- This is a **brief, practical tour** — not exhaustive. Tool choice varies by agency, project, security tier, and legacy systems.
+- **Data:** Storage, processing, and access.
+- **Algorithm:** Model development, testing, and deployment.
+- **Governance:** Security, approvals, auditability, and oversight.
+
+**Example:** A government AI model requires more than Python code — it needs secure data access, reproducible development, deployment infrastructure, and monitoring.
+
+**Transition:** We will briefly review the tools commonly used across this lifecycle.
+:::
 
 ---
 
-## Version Control & CI/CD
+## Development, Collaboration & Automation
 
-- Why it matters in government: **reproducibility**, **audit trail**, peer review, and collaboration across teams and agencies.
-- Git-based version control: **GitHub**, **GitLab**, **Azure Repos**
-- CI/CD pipelines automate testing, code review, and deployment of data/analytics code:
-  - **GitHub Actions**, **Azure DevOps Pipelines**
-- Public sector nuance: version history and code review support the **accountability** and **transparency** obligations raised in Module 1 (e.g. Algorithm Charter commitments).
+- **Programming:** R, Python, and SQL for analysis, modelling, and data processing.
+- **Version Control:** GitHub, GitLab, Azure Repos for collaboration and audit trails.
+- **CI/CD:** GitHub Actions and Azure DevOps for automated testing and deployment.
+- **Development Environments:** Posit, VS Code, and Jupyter for reproducible workflows.
+
+::: {.fragment}
+**Goal:** Reproducible, collaborative, and maintainable Data Science.
+:::
+
+::: notes
+**Key message:** Government Data Science requires reproducible and auditable development.
+
+**Examples:**
+- **R/Python:** Develop a diabetes risk prediction model.
+- **SQL:** Extract and transform data from a warehouse.
+- **Git:** Track changes to model code and enable peer review.
+- **CI/CD:** Automatically test code and deploy approved updates.
+- **Posit/Jupyter:** Provide collaborative environments for analysis.
+
+**Government context:** Version control and deployment approvals support accountability and traceability.
+
+**Important:** Sensitive data, credentials, and confidential outputs should not be committed to source-code repositories.
+:::
 
 ---
 
 ## Data Warehousing & Compute Platforms
 
-- Centralise, store, and process large or linked datasets for analytics.
-- Cloud data warehouses / lakehouses: **Snowflake**, **Databricks**, Azure Synapse, AWS Redshift.
+- **Cloud warehouses / lakehouses:** Snowflake, Databricks, Microsoft Fabric, AWS.
+- **Secure research environments:** Stats NZ Data Labs and other approved environments.
+- **Cloud / Hybrid Infrastructure:** Balance **scalability, cost, security, and data sovereignty**.
 
-| ![Snowflake](../logo/snowflake.svg){height="36"} | ![Databricks](../logo/databricks.svg){height="36"} | ![Microsoft Fabric](../logo/microsoft-fabric.svg){height="36"} | ![AWS](../logo/aws.svg){height="36"} |
-|:---:|:---:|:---:|:---:|
-| Snowflake | Databricks | Microsoft Fabric | AWS |
+<div style="display:flex; justify-content:space-around; align-items:center; margin-top:0.8em;">
+  <img src="../logo/snowflake.svg" style="height:66px;">
+  <img src="../logo/databricks.svg" style="height:66px;">
+  <img src="../logo/microsoft-fabric.svg" style="height:66px;">
+  <img src="../logo/aws.svg" style="height:66px;">
+</div>
 
-- Secure research environments: Stats NZ Data Lab infrastructure — links back to the **Five Safes** framework (Module 2).
-- General trend: a shift from on-premise servers to cloud/hybrid platforms, balancing **cost**, **scale**, and **data sovereignty/security** requirements.
+::: {.fragment}
+**Goal:** Secure, scalable, and governed data processing.
+:::
+
+::: notes
+**Key message:** Data platforms provide the storage and computing infrastructure for analytics and AI.
+
+**Examples:**
+- **Snowflake:** Centralise administrative datasets and support SQL-based analytics.
+- **Databricks:** Process large datasets and develop machine learning pipelines.
+- **Microsoft Fabric:** Integrate data engineering, analytics, and reporting.
+- **AWS:** Provide cloud infrastructure for data storage, computing, and AI services.
+- **Stats NZ Data Labs:** Enable approved research using restricted linked data.
+
+**Government considerations:** Data classification, access control, cost, security, and Māori Data Sovereignty should inform platform decisions.
+
+**Important:** Cloud hosting alone does not guarantee privacy compliance or data sovereignty.
+:::
 
 ---
 
-## Programming Languages & Analysis Tools
+## Analytics, Applications & Reporting
 
-- **R** and **Python** are the two dominant open-source languages in government data science:
-  - **R** — strong in statistics, survey/administrative data analysis, tidyverse ecosystem.
-  - **Python** — strong in ML/AI, automation, integration with cloud platforms.
-- **SQL** remains the lingua franca for querying data warehouses.
-- Choice often depends on team legacy, licensing, and the analytics platform already in use.
-  - **Posit** provides tools for developing and sharing R and Python work.
+- **Analysis & AI:** R, Python, SQL.
+- **Interactive Applications:** Shiny (R), Dash (Python).
+- **Enterprise Reporting:** Power BI.
+- **Collaboration & Publishing:** Posit tools and approved deployment services.
 
-  ![Posit](../logo/posit.svg){height="36"}
+::: {.fragment}
+**Goal:** Turn analysis into accessible, actionable insights.
+:::
 
----
+::: notes
+**Key message:** Data Science creates value when analytical results are accessible to appropriate users.
 
-## Dashboarding & Reporting
+**Examples:**
+- **Power BI:** An executive dashboard monitors employment trends and programme outcomes.
+- **Shiny:** An interactive application allows analysts to explore health inequalities across regions.
+- **Dash:** A Python-based application presents model predictions and explanations.
+- **Posit:** Supports developing and publishing R/Python applications in approved environments.
 
-- Communicating findings to decision-makers is as important as the analysis itself.
-- **Power BI** — widely adopted across NZ government agencies for enterprise reporting; integrates with Azure/Microsoft 365.
-- **Shiny** (R) / Dash (Python) — interactive, code-first apps for bespoke analytical tools and prototypes.
-- Choice depends on audience (executives vs. analysts), licensing, and long-term maintainability.
+**Government context:** Dashboards and applications require appropriate access controls, quality assurance, and ongoing maintenance.
+
+**Important:** Aggregated dashboards can still present disclosure risks, particularly for small population groups.
+:::
 
 ---
 
 ## Putting It All Together
 
-- A typical government data science pipeline:
-  - Version-controlled code → CI/CD → data warehouse/lakehouse → R/Python analysis → synthetic data/XAI methods where needed → Power BI/Shiny dashboard → decision-maker.
-- **Governance** (Module 1) shapes every step: who can access what, how it's approved, and how outputs are checked before release.
-- There is no single "right stack" — agencies choose based on governance requirements, cost, skills, and existing systems.
+**A typical government Data Science workflow:**
+
+**Data → Development → Modelling → Deployment → Decision Support**
+
+- **Data:** Snowflake, Databricks, secure research environments.
+- **Development:** SQL, R/Python, Git, CI/CD.
+- **Modelling:** Predictive AI, synthetic data, XAI.
+- **Delivery:** Power BI, Shiny, Dash, APIs.
+
+::: {.fragment}
+**Governance applies throughout — from data access to deployment and monitoring.**
+:::
+
+::: notes
+**Key message:** Platforms connect data, algorithms, and decision-makers within a governed workflow.
+
+**Example — Government health analytics:**
+1. **Data:** Access approved health and socioeconomic records.
+2. **Development:** Use SQL and Python/R to prepare data and build models.
+3. **Modelling:** Develop a diabetes risk model and use XAI to examine predictions.
+4. **Deployment:** Publish approved aggregate insights through Power BI or Shiny.
+5. **Monitoring:** Review data quality, model performance, access, and security.
+
+**Important:** Restricted IDI microdata and derived outputs must remain within approved environments unless authorised for release. A dashboard must not directly expose unapproved IDI information.
+
+**Takeaway:** There is no universal technology stack. Platform selection depends on security, governance, skills, cost, and existing agency infrastructure.
+
+**Workshop conclusion:** Governance establishes accountability, Data provides evidence, Algorithms create analytical capabilities, and Platforms enable responsible delivery.
+:::
 
 ---

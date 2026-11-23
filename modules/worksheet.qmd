@@ -1,0 +1,58 @@
+---
+title: "Project Worksheet: A Dementia Risk-Factor Study in Aotearoa NZ"
+subtitle: "DATA480-STAT480 · Workshop 2 · fill in one box after each module"
+format:
+  html:
+    toc: false
+    embed-resources: true
+---
+
+**Research question:** *What are the emerging risk and protective factors for dementia in an ageing Aotearoa New Zealand population, and how might we identify them using population data?*
+
+Work in your group. Short bullet points are fine. This worksheet becomes the skeleton of your final project plan.
+
+## 1. Governance (after Module 1)
+
+| Prompt | Your group's answer |
+|:--|:----------------------|
+| Which laws/codes apply to this health data? | |
+| Which ethics approvals are needed (university / HDEC)? | |
+| Who must be involved from a Māori data sovereignty / Te Tiriti perspective, and at what stage? | |
+| One governance risk that could stop the project | |
+
+## 2. Data (after Module 2)
+
+| Prompt | Your group's answer |
+|:--|:----------------------|
+| Main data source(s) and why | |
+| How will you *define* dementia in administrative data? (proxies, look-back window) | |
+| Key exposures / protective factors and confounders | |
+| Biggest data-quality or linkage concern (and who it affects most) | |
+
+## 3. Algorithm (after Module 3)
+
+| Prompt | Your group's answer |
+|:--|:----------------------|
+| Is the question predictive, causal, or both? Say why. | |
+| Primary method (e.g. survival model; how will you treat death as a competing risk?) | |
+| Would synthetic data help? For what purpose, and what would you check? | |
+| Would you use XAI? What can and can't it tell you here? | |
+
+## 4. Platform (after Module 4)
+
+| Prompt | Your group's answer |
+|:--|:----------------------|
+| Where does the analysis happen (e.g. secure Data Lab)? | |
+| How will you manage code, versions and reproducibility there? | |
+| How will results leave the secure environment? | |
+| Biggest practical delivery risk | |
+
+## 5. Synthesis
+
+**Our biggest risk or open question:**
+
+&nbsp;
+
+**What we would do first (week 1):**
+
+&nbsp;
