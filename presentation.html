@@ -1,0 +1,1784 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="presentation_files/libs/clipboard/clipboard.min.js"></script>
+<script src="presentation_files/libs/quarto-html/tabby.min.js"></script>
+<script src="presentation_files/libs/quarto-html/popper.min.js"></script>
+<script src="presentation_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="presentation_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="presentation_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="presentation_files/libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.9.38">
+
+  <meta name="author" content="Alex.Wang@vuw.ac.nz">
+  <title>DATA480-STAT480: Research Preparation - Workshop 2</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="presentation_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="presentation_files/libs/revealjs/dist/reveal.css">
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
+  <link rel="stylesheet" href="presentation_files/libs/revealjs/dist/theme/quarto-2740581606dc327e82f18f789b69d8a0.css">
+  <link rel="stylesheet" href="styles/vuw.css">
+  <link href="presentation_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="presentation_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="presentation_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="presentation_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">DATA480-STAT480: Research Preparation - Workshop 2</h1>
+  <p class="subtitle">Dr Alex Wang</p>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Alex.Wang@vuw.ac.nz 
+</div>
+        <p class="quarto-title-affiliation">
+            School of Mathematics and Statistics, Victoria University of Wellington
+          </p>
+    </div>
+</div>
+
+</section>
+<section>
+
+<section id="by-the-end-of-this-workshop-you-can" class="slide level2">
+<h2>By the end of this workshop you can…</h2>
+<ul>
+<li class="fragment"><strong>Explain</strong> how privacy law, Māori Data Sovereignty and data governance shape research with population data in Aotearoa NZ.</li>
+<li class="fragment"><strong>Describe</strong> what the IDI holds and how access works (Five Safes), and <strong>critique</strong> its limits: coverage, linkage error, timeliness.</li>
+<li class="fragment"><strong>Distinguish</strong> predictive from causal questions, and judge what synthetic data and XAI can and cannot do.</li>
+<li class="fragment"><strong>Outline</strong> the platform needs and constraints of a secure research project.</li>
+<li class="fragment"><strong>Integrate</strong> 1–4 into a defensible plan for a real research question.</li>
+</ul>
+<aside class="notes">
+<p>⏱ 2 min. Link to the course: this workshop feeds directly into the research-proposal skills assessed later. Say that the last 35 minutes is a synthesis task and that a worksheet will be filled in progressively.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-framework-we-will-use-all-day" class="slide level2">
+<h2>The framework we will use all day</h2>
+<p>Public sector data science practice = <strong>Data + Algorithm + Platform</strong>, underpinned by <strong>Governance</strong>.</p>
+<ul>
+<li class="fragment"><strong>Part 1:</strong> Intro → Module 1: Governance → Module 2: Data</li>
+<li class="fragment"><strong>15-minute break</strong></li>
+<li class="fragment"><strong>Part 2:</strong> Module 3: Algorithm → Module 4: Platform</li>
+<li class="fragment"><strong>Group discussion:</strong> 20-minute discussion based on a hypothetical research question</li>
+<li class="fragment"><strong>Wrap-up:</strong> Q&amp;A</li>
+</ul>
+</section>
+<section id="a-motivating-research-question" class="slide level2">
+<h2>A Motivating Research Question</h2>
+<div class="fragment">
+<p><strong>Scenario:</strong> As Aotearoa New Zealand’s population ages, policymakers want to know: <em>what are the emerging risk and protective factors for dementia, and how might we identify them using population data?</em></p>
+</div>
+<div class="checkpoint fragment">
+<p><strong>Project worksheet.</strong> After each module you will spend ~2 minutes adding to a worksheet for this question. At the end, it becomes the skeleton of your group’s project plan.</p>
+<p>Handout: <code>handout/worksheet.html</code></p>
+</div>
+<aside class="notes">
+<p>⏱ 3 min. Ask for a show of hands: who has family experience of dementia? (Optional and sensitive; offer to skip.) Remind students that real people and whānau sit behind the data they will be discussing.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section></section>
+<section id="part-1-governance-data" class="title-slide slide level1 center">
+<h1>Part 1: Governance &amp; Data</h1>
+
+</section>
+
+<section>
+<section id="governance-foundations-for-data-science-in-the-public-sector" class="title-slide slide level1 center">
+<h1>Governance: Foundations for Data Science in the Public Sector</h1>
+<aside class="notes">
+<p><strong>Key message:</strong> Governance underpins trustworthy public sector data science.</p>
+<ul>
+<li><strong>Data:</strong> Can we access, use, and trust the information?</li>
+<li><strong>Algorithm:</strong> Are models fair, explainable, and accountable?</li>
+<li><strong>Platform:</strong> Are systems secure and appropriately controlled?</li>
+</ul>
+<p><strong>Three foundations covered:</strong> - <strong>Privacy law:</strong> Individual rights and legal obligations. - <strong>Māori Data Sovereignty:</strong> Māori authority and collective rights and interests. - <strong>Data governance:</strong> Policies, roles, and processes that put these into practice.</p>
+<p><strong>Example:</strong> A government AI project needs lawful data access, appropriate Māori data governance, model oversight, and secure infrastructure.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="why-privacy-ethics-data-sovereignty-matter" class="slide level2">
+<h2>Why Privacy, Ethics &amp; Data Sovereignty Matter</h2>
+<ul>
+<li class="fragment"><strong>Privacy</strong> → Protects individuals from misuse of personal information.</li>
+<li class="fragment"><strong>Ethics</strong> → Promotes <strong>fairness, respect, and responsible data use</strong>.</li>
+<li class="fragment"><strong>Māori Data Sovereignty</strong> → Recognises <strong>collective rights and Māori authority</strong> over Māori data <span class="citation" data-cites="kukutai2023maori">(<a href="#/references" role="doc-biblioref" onclick="">Kukutai et al. 2023</a>)</span>.</li>
+</ul>
+<div class="fragment">
+<p><strong>Together, they support trust, accountability, and responsible Data Science.</strong></p>
+</div>
+<aside class="notes">
+<p><strong>Key message:</strong> Legal compliance alone does not guarantee ethical or culturally appropriate data use.</p>
+<p><strong>Examples:</strong> - <strong>Privacy:</strong> A researcher must have a lawful basis to access identifiable health records and protect them against unauthorised access. - <strong>Ethics:</strong> An AI model predicting welfare needs may reinforce existing inequalities if its training data reflects historical bias. - <strong>Māori Data Sovereignty:</strong> Research using Māori health data should consider Māori authority, governance, and collective benefit, even when individual privacy is protected.</p>
+<p><strong>Discussion:</strong> Can a data science project be legally compliant but still cause harm?</p>
+<p><strong>Transition:</strong> We begin with the legal foundation — New Zealand’s Privacy Act 2020.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="privacy-legal-foundations-in-aotearoa-new-zealand" class="slide level2">
+<h2>Privacy Legal Foundations in Aotearoa New Zealand</h2>
+<ul>
+<li class="fragment"><strong>Privacy Act 2020</strong> → Governs the handling of <strong>personal information</strong> <span class="citation" data-cites="privacyact2020">(<a href="#/references" role="doc-biblioref" onclick="">New Zealand Parliament 2020</a>)</span>.</li>
+<li class="fragment">Replaced the <strong>Privacy Act 1993</strong>, strengthening protections for the digital age.</li>
+<li class="fragment">Applies broadly to <strong>public and private sector agencies</strong>, subject to exceptions.</li>
+<li class="fragment">Regulated by the <strong>Office of the Privacy Commissioner</strong>.</li>
+<li class="fragment">Establishes <strong>13 Information Privacy Principles (IPPs)</strong>, with an additional <strong>IPP 3A</strong> effective from 1 May 2026.</li>
+</ul>
+<aside class="notes">
+<p><strong>Key message:</strong> The Privacy Act establishes the legal foundation for handling personal information in New Zealand.</p>
+<p><strong>Examples:</strong> - <strong>Government:</strong> An agency collecting income or employment records must comply with applicable privacy requirements. - <strong>Research:</strong> A university using identifiable patient data must consider lawful collection, use, disclosure, and security. - <strong>AI:</strong> Training a model using personal information does not remove privacy obligations.</p>
+<p><strong>Important distinction:</strong> The Act primarily protects information about identifiable individuals. Fully anonymised information generally falls outside its scope, although re-identification risks remain relevant.</p>
+<p><strong>2026 update:</strong> IPP 3A introduces notification requirements for indirect collection, subject to exceptions.</p>
+<p><strong>Transition:</strong> The 13 IPPs translate these legal obligations into practical rules for handling personal information.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-13-ipps-17" class="slide level2">
+<h2>The 13 IPPs (1–7)</h2>
+<div style="font-size:0.7em">
+<table class="caption-top">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 7%">
+<col style="width: 20%">
+<col style="width: 51%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>Theme</strong></th>
+<th style="text-align: center;"><strong>#</strong></th>
+<th style="text-align: left;"><strong>Principle</strong></th>
+<th style="text-align: left;"><strong>Key Idea</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Collection</strong></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;">Purpose of collection</td>
+<td style="text-align: left;">Collect information only for a <strong>lawful and necessary</strong> purpose.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: center;">2</td>
+<td style="text-align: left;">Source of information</td>
+<td style="text-align: left;">Collect directly from the individual where possible.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: center;">3</td>
+<td style="text-align: left;">Collection from individual</td>
+<td style="text-align: left;">Must <strong>inform</strong> people about what, why, and how data is used.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">1 May 2026</td>
+<td style="text-align: center;">3a*</td>
+<td style="text-align: left;">Indirect Collection</td>
+<td style="text-align: left;">Must <strong>inform</strong> people about what, why, and how data is used, if collect from someone other than the person themselves.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: center;">4</td>
+<td style="text-align: left;">Manner of collection</td>
+<td style="text-align: left;">Collect <strong>fairly and lawfully</strong>, respecting dignity and context.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Storage &amp; Security</strong></td>
+<td style="text-align: center;">5</td>
+<td style="text-align: left;">Storage and security</td>
+<td style="text-align: left;">Protect information from loss, misuse, or unauthorised access.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<aside class="notes">
+<p><strong>Key message:</strong> IPPs 1–5 regulate how personal information is collected and protected.</p>
+<ul>
+<li><strong>IPPs 1–4:</strong> Collect necessary information, explain its purpose, and use fair collection methods.</li>
+<li><strong>IPP 3A (2026):</strong> Indirect collection generally requires notification, subject to exceptions.</li>
+<li><strong>IPP 5:</strong> Apply reasonable security safeguards.</li>
+</ul>
+<p><strong>Examples:</strong> - <strong>Surveys:</strong> A diabetes study collects age, ethnicity, income, and health history. Researchers should justify why each variable is necessary and inform participants how their data will be used. - <strong>Social media scraping:</strong> Researchers collect public Facebook posts to analyse mental health attitudes. Public availability does not automatically permit unrestricted collection or reuse; fairness, notification, and applicable exceptions must be considered. - <strong>Health records:</strong> A university stores identifiable patient records for AI training. Encryption, role-based access, audit logs, and secure research environments help prevent unauthorised access.</p>
+<p><strong>Discussion:</strong> Does individual consent necessarily mean collecting data from Māori communities is culturally appropriate?</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-13-ipps-813" class="slide level2">
+<h2>The 13 IPPs (8–13)</h2>
+<div style="font-size:0.7em">
+<table class="caption-top">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 7%">
+<col style="width: 20%">
+<col style="width: 51%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>Theme</strong></th>
+<th style="text-align: center;"><strong>#</strong></th>
+<th style="text-align: left;"><strong>Principle</strong></th>
+<th style="text-align: left;"><strong>Key Idea</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Access &amp; Correction</strong></td>
+<td style="text-align: center;">6</td>
+<td style="text-align: left;">Access</td>
+<td style="text-align: left;">People have a right to <strong>see</strong> their personal information.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: center;">7</td>
+<td style="text-align: left;">Correction</td>
+<td style="text-align: left;">People can <strong>correct or update</strong> their information.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Use &amp; Accuracy</strong></td>
+<td style="text-align: center;">8</td>
+<td style="text-align: left;">Accuracy</td>
+<td style="text-align: left;">Ensure data is <strong>up to date and correct</strong> before use.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: center;">9</td>
+<td style="text-align: left;">Retention</td>
+<td style="text-align: left;">Don’t keep information <strong>longer than necessary</strong>.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: center;">10</td>
+<td style="text-align: left;">Use limitation</td>
+<td style="text-align: left;">Use only for the <strong>original purpose</strong> collected.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Disclosure</strong></td>
+<td style="text-align: center;">11</td>
+<td style="text-align: left;">Disclosure</td>
+<td style="text-align: left;">Share only when <strong>authorised</strong> or <strong>expected</strong>.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Cross-border &amp; Identifiers</strong></td>
+<td style="text-align: center;">12</td>
+<td style="text-align: left;">Cross-border disclosure</td>
+<td style="text-align: left;">Safeguard information sent <strong>overseas</strong> (ensure similar protections).</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: center;">13</td>
+<td style="text-align: left;">Unique identifiers</td>
+<td style="text-align: left;">Use unique IDs only when <strong>necessary</strong> and <strong>non-misleading</strong>.</td>
+</tr>
+</tbody>
+</table>
+<div style="font-size:0.8em; text-align:right; margin-top:0.5em;">
+<p>Source: <a href="https://www.privacy.org.nz/privacy-principles/">Office of the Privacy Commissioner — NZ Privacy Principles</a></p>
+</div>
+</div>
+<aside class="notes">
+<p><strong>Key message:</strong> IPPs 6–13 govern individual rights and the subsequent use, retention, and disclosure of information.</p>
+<ul>
+<li><strong>IPPs 6–7:</strong> Individuals can request access to and correction of their information.</li>
+<li><strong>IPPs 8–9:</strong> Take reasonable steps to ensure accuracy and avoid unnecessary retention.</li>
+<li><strong>IPPs 10–11:</strong> Secondary use and disclosure require a permitted basis.</li>
+<li><strong>IPP 12:</strong> Overseas disclosure requires appropriate safeguards.</li>
+<li><strong>IPP 13:</strong> Restricts unique identifiers, with specific research provisions.</li>
+</ul>
+<p><strong>Examples:</strong> - <strong>AI prediction (IPP 8):</strong> A hospital predicts readmission risk using outdated diagnoses and incomplete clinical records. Poor data quality can produce inaccurate predictions and potentially disadvantage certain groups. - <strong>IDI data linkage (IPPs 10 &amp; 13):</strong> Researchers link health, income, and education records to investigate diabetes risk. The research purpose, legal permissions, identifier handling, and disclosure controls must be assessed. - <strong>Cloud storage (IPPs 5 &amp; 12):</strong> A university uses an overseas cloud provider to process patient data. Researchers must assess security, contractual safeguards, and whether the arrangement constitutes overseas disclosure.</p>
+<p><strong>Transition:</strong> The Privacy Act primarily protects individuals, but population-level analysis can affect entire communities. Who should have authority over data about those communities?</p>
+<ul>
+<li>They are largely <strong>individual-centric</strong> — focused on individual rights, not collective data control.<br>
+</li>
+<li>This raises key questions for Māori contexts: Can privacy laws evolve to recognise <strong>collective data sovereignty</strong>? <span class="citation" data-cites="watts2025protecting">(<a href="#/references" role="doc-biblioref" onclick="">Watts and Kukutai 2025</a>)</span></li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="māori-data-sovereignty-what-it-means" class="slide level2">
+<h2>Māori Data Sovereignty — What It Means</h2>
+<ul>
+<li class="fragment"><strong>Māori Data</strong> = Data about Māori people, communities, and resources.</li>
+</ul>
+<aside class="notes">
+<ul>
+<li>Data generated by Māori</li>
+<li>Data about Māori collected by others</li>
+<li>Data about Māori land, language, culture, and environment</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<ul>
+<li class="fragment"><strong>Māori Data Sovereignty</strong> = Māori rights to exercise <strong>authority, control, and self-determination</strong> over Māori data.</li>
+</ul>
+<div class="fragment">
+<h4 id="guiding-principles-te-mana-raraunga">Guiding Principles — Te Mana Raraunga</h4>
+<ul>
+<li class="fragment"><strong>Rangatiratanga</strong> → Authority and self-determination</li>
+<li class="fragment"><strong>Whakapapa</strong> → Relationships and context</li>
+<li class="fragment"><strong>Whanaungatanga</strong> → Obligations and accountability</li>
+<li class="fragment"><strong>Kotahitanga</strong> → Collective benefit</li>
+<li class="fragment"><strong>Manaakitanga</strong> → Respect and reciprocity</li>
+<li class="fragment"><strong>Kaitiakitanga</strong> → Guardianship and stewardship</li>
+</ul>
+</div>
+<aside class="notes">
+<p><strong>Key message:</strong> Protecting individual privacy does not necessarily address collective rights, governance, or community impacts.</p>
+<p><strong>Example — Māori diabetes risk prediction:</strong></p>
+<p>Researchers develop an AI model using linked health and socioeconomic records. The model identifies higher predicted diabetes risk among Māori communities.</p>
+<p>Even if individual records are protected and published findings are aggregated: - <strong>Authority:</strong> Were Māori involved in deciding the research purpose and how their data would be used? - <strong>Representation:</strong> Could the findings reinforce stereotypes if socioeconomic and historical contexts are ignored? - <strong>Benefit:</strong> Will the results improve Māori health services, or primarily benefit researchers?</p>
+<p><strong>Six principles — Te Mana Raraunga:</strong> - <strong>Rangatiratanga:</strong> Māori authority over data decisions. - <strong>Whakapapa:</strong> Understand data origins, relationships, and context. - <strong>Whanaungatanga:</strong> Maintain relationships and accountability. - <strong>Kotahitanga:</strong> Support collective Māori benefit. - <strong>Manaakitanga:</strong> Ensure respectful and reciprocal data practices. - <strong>Kaitiakitanga:</strong> Provide responsible guardianship and governance.</p>
+<p><strong>Discussion:</strong> Can an AI research project comply with the Privacy Act but still fail to respect Māori Data Sovereignty?</p>
+<p><strong>Takeaway:</strong> Legal privacy compliance and Māori Data Sovereignty are complementary but distinct responsibilities.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="data-governance-in-the-public-sector" class="slide level2">
+<h2>Data Governance in the Public Sector</h2>
+<ul>
+<li class="fragment"><p><strong>Data governance</strong> = Policies, roles, and processes for managing data <strong>responsibly and effectively</strong> throughout its lifecycle <span class="citation" data-cites="wang2024iccae">(<a href="#/references" role="doc-biblioref" onclick="">Wang et al. 2024</a>)</span>.</p></li>
+<li class="fragment"><p><strong>Key mechanisms in New Zealand:</strong></p>
+<ul>
+<li class="fragment"><strong>Government Chief Data Steward</strong> — leadership and standards.</li>
+<li class="fragment"><strong>Algorithm Charter</strong> — transparency, fairness, and accountability.</li>
+<li class="fragment"><strong>Agency-level governance</strong> — data stewardship, access controls, and oversight.</li>
+</ul></li>
+</ul>
+<div class="fragment">
+<p><strong>From principles to practice:</strong> Making <strong>Data, Algorithms, and Platforms</strong> trustworthy.</p>
+</div>
+<aside class="notes">
+<p><strong>Key message:</strong> Governance translates privacy, Māori Data Sovereignty, and ethical considerations into operational decisions.</p>
+<p><strong>Examples:</strong> - <strong>Chief Data Steward:</strong> Stats NZ provides government-wide data leadership and promotes common standards. - <strong>Algorithm Charter:</strong> An agency developing an AI model should assess bias, explain its purpose, and ensure appropriate human oversight. - <strong>Agency governance:</strong> Researchers accessing IDI data must meet the Five Safes requirements, including approved projects, people, and secure access.</p>
+<p><strong>Māori Data Sovereignty:</strong> Governance should enable meaningful Māori authority and participation in decisions about Māori data.</p>
+<p><strong>Takeaway:</strong> Governance defines who makes decisions, under what rules, and who is accountable.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section></section>
+<section>
+<section id="data-research-data-landscape-in-new-zealand" class="title-slide slide level1 center">
+<h1>Data: Research Data Landscape in New Zealand</h1>
+<aside class="notes">
+<p><strong>Key message:</strong> Data is the first practical component of public sector Data Science, alongside Algorithm and Platform.</p>
+<ul>
+<li>Governance determines how data can be accessed, managed, and used.</li>
+<li>NZ offers both open datasets and restricted research data.</li>
+<li>The IDI demonstrates how large-scale data integration operates within a governed environment.</li>
+</ul>
+<p><strong>Transition:</strong> We begin with the available research data sources before focusing on the IDI.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="research-data-sources-in-aotearoa-nz" class="slide level2">
+<h2>Research Data Sources in Aotearoa NZ</h2>
+<ul>
+<li class="fragment"><strong>Open and publicly accessible data:</strong>
+<ul>
+<li class="fragment"><a href="https://data.govt.nz">data.govt.nz</a> — Government open data portal.</li>
+<li class="fragment"><a href="https://www.stats.govt.nz/">Aotearoa Data Explorer</a> — Official population, social, and economic statistics.</li>
+<li class="fragment"><a href="https://niwa.co.nz/">Environmental Data</a> — Climate, water, and environmental information.</li>
+<li class="fragment"><a href="https://www.health.govt.nz/">Health Data</a> — Health statistics and publications.</li>
+<li class="fragment"><a href="https://www.educationcounts.govt.nz/">Education Counts</a> — Education statistics and indicators.</li>
+</ul></li>
+</ul>
+<div class="fragment">
+<ul>
+<li class="fragment"><strong>Restricted research data:</strong> Stats NZ’s <strong>Integrated Data Infrastructure (IDI)</strong> and <strong>Longitudinal Business Database (LBD)</strong>.</li>
+</ul>
+</div>
+<aside class="notes">
+<p><strong>Key message:</strong> NZ provides both open data and controlled-access microdata.</p>
+<p><strong>Examples:</strong> - <strong>Open data:</strong> Download regional population and health statistics to visualise diabetes prevalence or socioeconomic inequalities. - <strong>Restricted data:</strong> Study individual-level relationships between income, education, and health outcomes using linked IDI records.</p>
+<p><strong>Distinction:</strong> Open data supports accessible analysis; restricted microdata enables more detailed research but requires approval and safeguards.</p>
+<p><strong>Transition:</strong> Our main focus is the IDI, one of NZ’s most important research data infrastructures.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="what-are-the-idi-and-lbd" class="slide level2">
+<h2>What are the IDI and LBD?</h2>
+<ul>
+<li class="fragment"><strong>IDI</strong> → Linked data about <strong>people and households</strong>.</li>
+<li class="fragment"><strong>LBD</strong> → Linked data about <strong>businesses and economic activity</strong>.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="https://www.stats.govt.nz/integrated-data/integrated-data-infrastructure/data-in-the-idi/"><img data-src="../figures/M2_statsnz-idi-lbd.png"></a></p>
+<figcaption>Source: Stats NZ</figcaption>
+</figure>
+</div>
+<aside class="notes">
+<p><strong>Key message:</strong> IDI and LBD enable researchers to analyse linked information across time and domains.</p>
+<p><strong>Examples:</strong> - <strong>IDI:</strong> Link health, education, income, and housing records to study factors associated with diabetes. - <strong>LBD:</strong> Analyse how business characteristics, innovation, and employment change over time.</p>
+<p><strong>Important:</strong> De-identified data is not necessarily anonymous. Researchers must follow confidentiality and access requirements.</p>
+<p><strong>Transition:</strong> The real value comes from linking information that would otherwise remain in separate datasets.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="why-the-idi-matters" class="slide level2">
+<h2>Why the IDI Matters</h2>
+<ul>
+<li class="fragment"><strong>Integrated:</strong> Connects information across health, education, employment, housing, and other domains.</li>
+<li class="fragment"><strong>Longitudinal:</strong> Tracks outcomes and changes <strong>over time</strong>.</li>
+<li class="fragment"><strong>Population-scale:</strong> Supports research across large segments of New Zealand’s population.</li>
+<li class="fragment"><strong>Policy-relevant:</strong> Enables cross-sector research and programme evaluation <span class="citation" data-cites="milne2019data milne2022longitudinal">(<a href="#/references" role="doc-biblioref" onclick="">Milne et al. 2019</a>; <a href="#/references" role="doc-biblioref" onclick="">Milne 2022</a>)</span>.</li>
+</ul>
+<div class="fragment">
+<p><strong>Key strength:</strong> Understanding complex social outcomes through <strong>linked, longitudinal data</strong>.</p>
+</div>
+<aside class="notes">
+<p><strong>Key message:</strong> IDI allows researchers to study relationships across sectors and over time.</p>
+<p><strong>Examples:</strong> - <strong>Health:</strong> Investigate how income, housing, and education relate to future diabetes risk. - <strong>Education:</strong> Examine transitions from secondary education to tertiary study and employment. - <strong>Policy:</strong> Evaluate whether participation in a government programme is associated with improved long-term outcomes.</p>
+<p><strong>Data Science relevance:</strong> Supports predictive modelling, longitudinal analysis, and causal research designs, although data linkage alone does not establish causality.</p>
+<p><strong>Caution:</strong> The IDI is not a complete census of every activity or person; coverage varies by dataset.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="idi-governance-the-five-safes" class="slide level2">
+<h2>IDI Governance: The Five Safes</h2>
+<p>Access to the IDI is governed by Stats NZ’s <strong>Five Safes framework</strong> <span class="citation" data-cites="stats_nz_idi">(<a href="#/references" role="doc-biblioref" onclick="">Statistics New Zealand 2025</a>)</span>.</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>Principle</strong></th>
+<th style="text-align: left;"><strong>Key Requirement</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Safe People</strong></td>
+<td style="text-align: left;">Approved and appropriately trained researchers</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Safe Projects</strong></td>
+<td style="text-align: left;">Approved research with public benefit</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Safe Data</strong></td>
+<td style="text-align: left;">Data prepared to minimise identification risks</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Safe Settings</strong></td>
+<td style="text-align: left;">Secure, controlled research environments</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Safe Outputs</strong></td>
+<td style="text-align: left;">Confidentiality-checked research results</td>
+</tr>
+</tbody>
+</table>
+<div class="fragment">
+<p><strong>The Five Safes balance research utility with privacy and confidentiality protection.</strong></p>
+</div>
+<aside class="notes">
+<p><strong>Key message:</strong> The Five Safes operationalise governance throughout the research lifecycle.</p>
+<p><strong>Example — Diabetes research using IDI:</strong> - <strong>People:</strong> Researchers complete training and obtain approval. - <strong>Projects:</strong> The diabetes research proposal is assessed for public benefit and appropriate use. - <strong>Data:</strong> Researchers access de-identified, linked health and socioeconomic records. - <strong>Settings:</strong> Analysis takes place in an approved secure environment. - <strong>Outputs:</strong> Tables, figures, and model results undergo confidentiality checks before release.</p>
+<p><strong>Important:</strong> No single safeguard is sufficient. Protection comes from combining all five.</p>
+<p><strong>Connection:</strong> This is a practical application of the governance concepts introduced in Module 1.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="limitations-of-the-idi" class="slide level2">
+<h2>Limitations of the IDI</h2>
+<ul>
+<li class="fragment"><strong>Coverage &amp; Quality:</strong> Missing information, linkage errors, and administrative data limitations.</li>
+<li class="fragment"><strong>Timeliness:</strong> Updates and reporting lags vary across datasets.</li>
+<li class="fragment"><strong>Access &amp; Security:</strong> Research approvals, secure environments, and output checks.</li>
+<li class="fragment"><strong>Computing:</strong> Software, infrastructure, and resource constraints.</li>
+<li class="fragment"><strong>Equity &amp; Governance:</strong> Māori Data Sovereignty and representational concerns.</li>
+</ul>
+<div class="fragment">
+<p><strong>Key challenge:</strong> Balancing <strong>data utility, accessibility, privacy, and equity</strong>.</p>
+</div>
+<aside class="notes">
+<p><strong>Key message:</strong> The IDI is powerful, but researchers must understand its limitations.</p>
+<p><strong>Examples:</strong> - <strong>Coverage:</strong> Hospital data captures many serious conditions, but detailed primary care consultations and clinical notes are generally unavailable. - <strong>Quality:</strong> Administrative records may contain missing values, inconsistent coding, and linkage errors that affect AI predictions. - <strong>Timeliness:</strong> Some datasets are updated later than others, limiting real-time analysis. - <strong>Access:</strong> Project approval and output checking can slow research and collaboration. - <strong>Computing:</strong> Large-scale machine learning may be constrained by available computing resources and approved software. - <strong>Equity:</strong> Incomplete or uneven representation can affect Māori and other population groups. Māori data governance also requires attention beyond statistical representativeness.</p>
+<p><strong>Discussion:</strong> How can we improve research accessibility and AI innovation without compromising privacy or Māori Data Sovereignty?</p>
+<p><strong>Takeaway:</strong> The IDI is valuable national research infrastructure, but its limitations must be considered when designing research and interpreting results.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section class="slide level2">
+
+</section></section>
+<section id="break-15-minutes" class="title-slide slide level1 center">
+<h1>Break (15 minutes)</h1>
+<aside class="notes">
+<p>Suggested: put the framework diagram on screen. Ask students to think about which of the two modules so far has most constrained their dementia project.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+
+<section id="part-2-algorithm-platform" class="title-slide slide level1 center">
+<h1>Part 2: Algorithm &amp; Platform</h1>
+
+</section>
+
+<section>
+<section id="algorithm-synthetic-data-xai-ai-adoption" class="title-slide slide level1 center">
+<h1>Algorithm: Synthetic Data, XAI &amp; AI Adoption</h1>
+<aside class="notes">
+<p><strong>Key message:</strong> Algorithms turn governed data into insights, predictions, and services.</p>
+<p>Three topics: - <strong>Synthetic Data:</strong> Improve data availability and support privacy-conscious development. - <strong>XAI:</strong> Make model behaviour more understandable. - <strong>AI Adoption:</strong> Translate technical capabilities into responsible public sector practice.</p>
+<p><strong>Connection:</strong> Data enables algorithms; governance determines how they can be responsibly developed and deployed.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="synthetic-data-definition-motivation" class="slide level2">
+<h2>Synthetic Data: Definition &amp; Motivation</h2>
+<p><strong>Synthetic data</strong> = Artificially generated data that mimics patterns and relationships in real datasets <span class="citation" data-cites="raghunathan2021synthetic">(<a href="#/references" role="doc-biblioref" onclick="">Raghunathan 2021</a>)</span>.</p>
+<p><strong>Why generate it?</strong> - <strong>Quantity:</strong> Limited observations and rare events. - <strong>Quality:</strong> Missing values and imbalanced datasets. - <strong>Availability:</strong> Restricted access to sensitive data.</p>
+<div class="fragment">
+<p><a href="https://doi.org/10.1007/978-981-96-8183-9_28"><img data-src="../figures/M3_Data_Issues.jpg" style="width:65.0%"></a></p>
+</div>
+<aside class="notes">
+<p><strong>Key message:</strong> Synthetic data can help overcome limitations in real-world datasets.</p>
+<p><strong>Examples:</strong> - <strong>Quantity:</strong> Rare disease datasets may have too few observations for robust model development. - <strong>Quality:</strong> Synthetic generation may help explore class imbalance, but cannot automatically fix source-data bias. - <strong>Availability:</strong> Researchers could use an approved synthetic IDI-like dataset to develop SQL queries and test analytical pipelines outside secure environments.</p>
+<p><strong>Important:</strong> Synthetic data is not automatically anonymous or privacy-preserving. Generative models may memorise or disclose sensitive information.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="synthetic-data-methods-evolution" class="slide level2">
+<h2>Synthetic Data: Methods &amp; Evolution</h2>
+<ul>
+<li class="fragment"><strong>Statistical methods</strong> → Sampling, probabilistic models, copulas.</li>
+<li class="fragment"><strong>Deep generative models</strong> → VAEs and GANs.</li>
+<li class="fragment"><strong>Recent approaches</strong> → Diffusion models and LLMs.</li>
+</ul>
+<p><a href="https://doi.org/10.1007/978-981-96-8183-9_28"><img data-src="../figures/M3_Progression.png" style="width:85.0%"></a></p>
+<aside class="notes">
+<p><strong>Key message:</strong> Tabular Data Synthesis (TDS) uses increasingly sophisticated methods to capture relationships between variables.</p>
+<p><strong>Examples:</strong> - <strong>Statistical:</strong> Copulas model dependencies among age, income, and health outcomes. - <strong>VAEs/GANs:</strong> Learn complex nonlinear relationships in mixed-type data. - <strong>Diffusion:</strong> Generate synthetic records through iterative denoising. - <strong>LLMs:</strong> Generate structured records using prompts or learned patterns.</p>
+<p><strong>Caution:</strong> These methods overlap historically. Newer approaches are not necessarily better for every dataset.</p>
+<p><strong>Transition:</strong> Regardless of the generation method, synthetic data must be evaluated before use.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="synthetic-data-value-evaluation" class="slide level2">
+<h2>Synthetic Data: Value &amp; Evaluation</h2>
+<p><strong>Public sector applications:</strong> - <strong>Augment</strong> → Support development with limited data. - <strong>Balance</strong> → Explore under-represented groups. - <strong>Enable Access</strong> → Develop and test without directly sharing real records.</p>
+<p><strong>Four evaluation dimensions:</strong></p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>Dimension</strong></th>
+<th style="text-align: left;"><strong>Key Question</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Fidelity</strong></td>
+<td style="text-align: left;">Does it resemble real data?</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Utility</strong></td>
+<td style="text-align: left;">Is it useful for analysis and ML?</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Privacy</strong></td>
+<td style="text-align: left;">Could real individuals be exposed?</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Fairness</strong></td>
+<td style="text-align: left;">Are biases reproduced or amplified?</td>
+</tr>
+</tbody>
+</table>
+<aside class="notes">
+<p><strong>Key message:</strong> Synthetic data offers opportunities, but quality and privacy require separate evaluation.</p>
+<p><strong>Examples:</strong> - <strong>Fidelity:</strong> Compare distributions, correlations, and relationships between real and synthetic health records. - <strong>Utility:</strong> Train a diabetes prediction model on synthetic data and evaluate it on held-out real data (TSTR). - <strong>Privacy:</strong> Test membership inference, attribute inference, and record linkage risks. - <strong>Fairness:</strong> Compare model performance across Māori, Pacific, and other population groups.</p>
+<p><strong>Public sector example:</strong> A synthetic IDI proxy could support code development and training outside secure labs, subject to disclosure-risk assessment and approval.</p>
+<p><strong>Important:</strong> Synthetic data does not automatically resolve privacy obligations or Māori Data Sovereignty concerns.</p>
+<p><strong>Takeaway:</strong> High fidelity does not guarantee utility, privacy, or fairness.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="xai-why-explainability-matters" class="slide level2">
+<h2>XAI: Why Explainability Matters</h2>
+<ul>
+<li class="fragment"><strong>Predictive performance</strong> alone is not sufficient for high-impact decisions.</li>
+<li class="fragment"><strong>Interpretability</strong> supports transparency, trust, and human oversight.</li>
+</ul>
+<div style="text-align:center; margin-top:0.3em;">
+<p><img src="../figures/M3_utility_interpretability.png" style="width:60%; max-height:40vh; object-fit:contain;"></p>
+</div>
+<div class="fragment">
+<p><strong>Key consideration:</strong> Balancing <strong>accuracy, interpretability, and accountability</strong>.</p>
+</div>
+<aside class="notes">
+<p><strong>Key message:</strong> Government AI must balance predictive performance with the need to understand and justify decisions.</p>
+<p><strong>Example — Health risk prediction:</strong> - <strong>Logistic regression:</strong> Often easier to interpret, with clear model coefficients. - <strong>Random forest / XGBoost:</strong> Can capture complex relationships but may require post-hoc explanations. - <strong>Deep learning:</strong> Can model complex patterns but is often harder to interpret directly.</p>
+<p><strong>Public sector example:</strong> A government agency develops an AI model to identify people at risk of long-term unemployment.</p>
+<p>A complex model achieves 86% accuracy, while an interpretable model achieves 84%.</p>
+<p>Is the 2% improvement worth the additional complexity, especially if predictions influence access to support services?</p>
+<p><strong>Important caveat:</strong> The diagram illustrates a common perceived trade-off, not a universal rule. More complex models are not necessarily more accurate.</p>
+<p><strong>Transition:</strong> XAI methods such as SHAP and LIME help explain complex model predictions.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="xai-methods-government-applications" class="slide level2">
+<h2>XAI: Methods &amp; Government Applications</h2>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>Method</strong></th>
+<th style="text-align: left;"><strong>Purpose</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Linear models / Trees</strong></td>
+<td style="text-align: left;">Intrinsically interpretable predictions</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>SHAP</strong></td>
+<td style="text-align: left;">Feature contributions</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>LIME</strong></td>
+<td style="text-align: left;">Local prediction explanations</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>PDP</strong></td>
+<td style="text-align: left;">Average model response to features</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Counterfactuals</strong></td>
+<td style="text-align: left;">Changes that alter predictions</td>
+</tr>
+</tbody>
+</table>
+<div class="fragment">
+<p><strong>Applications:</strong> Health risk prediction • Tax compliance • Social services</p>
+</div>
+<aside class="notes">
+<p><strong>Key message:</strong> Different XAI methods explain different aspects of model behaviour.</p>
+<p><strong>Examples:</strong> - <strong>SHAP (Health):</strong> Identify variables contributing to an individual’s predicted diabetes risk. - <strong>LIME (Tax):</strong> Explain why an anomaly detection model flagged a transaction for further review. - <strong>PDP (Social services):</strong> Explore how predicted outcomes vary with income or employment history. - <strong>Counterfactuals:</strong> Identify feasible changes that would alter a model’s prediction.</p>
+<p><strong>Limitations:</strong> - SHAP contributions are not causal effects. - LIME explanations can vary with sampling. - PDP can be misleading with correlated variables. - Counterfactual changes may be unrealistic or inappropriate.</p>
+<p><strong>Government relevance:</strong> XAI supports transparency, scrutiny, and human oversight, but must be combined with model validation and governance.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="ai-adoption-in-government-opportunities" class="slide level2">
+<h2>AI Adoption in Government: Opportunities</h2>
+<p>AI can improve public services through:</p>
+<ul>
+<li class="fragment"><strong>Productivity</strong> → Automate routine administrative tasks.</li>
+<li class="fragment"><strong>Decision Support</strong> → Assist evidence-based decisions.</li>
+<li class="fragment"><strong>Service Delivery</strong> → Improve responsiveness and accessibility.</li>
+<li class="fragment"><strong>Policy Insights</strong> → Analyse complex population and economic trends.</li>
+</ul>
+<div class="fragment">
+<p><strong>Goal:</strong> Better public outcomes, not simply more automation.</p>
+</div>
+<aside class="notes">
+<p><strong>Key message:</strong> AI adoption should be driven by public value and clearly defined problems.</p>
+<p><strong>Examples:</strong> - <strong>Productivity:</strong> Summarise lengthy policy documents or assist with drafting routine reports, with human review. - <strong>Decision Support:</strong> Predict hospital demand to support workforce and resource planning. - <strong>Service Delivery:</strong> Help people navigate government information and services through an AI assistant. - <strong>Policy Insights:</strong> Analyse employment, education, and health patterns to support policy development.</p>
+<p><strong>Discussion:</strong> Which tasks should AI automate, and which should remain under human decision-making?</p>
+<p><strong>Important:</strong> AI-generated outputs require appropriate verification, especially in high-impact settings.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="ai-adoption-in-government-challenges" class="slide level2">
+<h2>AI Adoption in Government: Challenges</h2>
+<ul>
+<li class="fragment"><strong>Data</strong> → Quality, availability, privacy, and sovereignty.</li>
+<li class="fragment"><strong>Algorithms</strong> → Bias, explainability, reliability, and safety.</li>
+<li class="fragment"><strong>Platforms</strong> → Security, infrastructure, and integration.</li>
+<li class="fragment"><strong>People &amp; Governance</strong> → Skills, accountability, trust, and oversight.</li>
+</ul>
+<div class="fragment">
+<p><strong>Key challenge:</strong> Moving from promising AI pilots to safe, sustainable public services.</p>
+</div>
+<aside class="notes">
+<p><strong>Key message:</strong> AI adoption is an organisational and governance challenge, not only a technical one.</p>
+<p><strong>Examples:</strong> - <strong>Data:</strong> Sensitive government records cannot simply be uploaded into an external AI service. - <strong>Algorithms:</strong> An eligibility prediction model may reproduce historical inequalities. - <strong>Platforms:</strong> An AI prototype may work in a notebook but lack secure deployment, monitoring, and integration. - <strong>People:</strong> Staff need training to recognise hallucinations, limitations, and inappropriate reliance on AI.</p>
+<p><strong>NZ context:</strong> Consider the Privacy Act, Algorithm Charter commitments where applicable, Māori Data Sovereignty, and agency-specific security and assurance requirements.</p>
+<p><strong>Takeaway:</strong> Successful AI adoption requires coordinated development across Data, Algorithm, Platform, and Governance.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="from-experimentation-to-responsible-ai-adoption" class="slide level2">
+<h2>From Experimentation to Responsible AI Adoption</h2>
+<p><strong>A practical pathway:</strong></p>
+<ol type="1">
+<li class="fragment"><strong>Identify</strong> → Define the public problem and expected benefit.</li>
+<li class="fragment"><strong>Assess</strong> → Evaluate data readiness, risks, and governance.</li>
+<li class="fragment"><strong>Pilot</strong> → Develop and validate with appropriate users.</li>
+<li class="fragment"><strong>Deploy</strong> → Implement secure systems with human oversight.</li>
+<li class="fragment"><strong>Monitor</strong> → Evaluate performance, fairness, and outcomes.</li>
+</ol>
+<div class="fragment">
+<p><strong>Responsible AI = Public Value + Technical Assurance + Governance</strong></p>
+</div>
+<aside class="notes">
+<p><strong>Key message:</strong> AI adoption is a lifecycle, not a one-off technology purchase.</p>
+<p><strong>Example — Government AI assistant:</strong> 1. <strong>Identify:</strong> Reduce time spent searching policy guidance. 2. <strong>Assess:</strong> Classify information and determine which documents can be used. 3. <strong>Pilot:</strong> Test answer accuracy, hallucinations, and user experience. 4. <strong>Deploy:</strong> Apply access controls, logging, and human escalation. 5. <strong>Monitor:</strong> Track errors, usage, user feedback, and changes to source documents.</p>
+<p><strong>Final takeaway:</strong> Synthetic data helps address data access challenges; XAI supports model understanding; governance and platforms enable responsible deployment.</p>
+<p><strong>Transition:</strong> Next, we examine the Platform component — the infrastructure required to develop and operate AI securely.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section class="slide level2">
+
+</section></section>
+<section>
+<section id="platform-tools-infrastructure-in-government" class="title-slide slide level1 center">
+<h1>Platform: Tools &amp; Infrastructure in Government</h1>
+<aside class="notes">
+<p><strong>Key message:</strong> Platforms provide the infrastructure needed to develop, deploy, and maintain Data Science solutions.</p>
+<ul>
+<li><strong>Data:</strong> Storage, processing, and access.</li>
+<li><strong>Algorithm:</strong> Model development, testing, and deployment.</li>
+<li><strong>Governance:</strong> Security, approvals, auditability, and oversight.</li>
+</ul>
+<p><strong>Example:</strong> A government AI model requires more than Python code — it needs secure data access, reproducible development, deployment infrastructure, and monitoring.</p>
+<p><strong>Transition:</strong> We will briefly review the tools commonly used across this lifecycle.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="development-collaboration-automation" class="slide level2">
+<h2>Development, Collaboration &amp; Automation</h2>
+<ul>
+<li class="fragment"><strong>Programming:</strong> R, Python, and SQL for analysis, modelling, and data processing.</li>
+<li class="fragment"><strong>Version Control:</strong> GitHub, GitLab, Azure Repos for collaboration and audit trails.</li>
+<li class="fragment"><strong>CI/CD:</strong> GitHub Actions and Azure DevOps for automated testing and deployment.</li>
+<li class="fragment"><strong>Development Environments:</strong> Posit, VS Code, and Jupyter for reproducible workflows.</li>
+</ul>
+<div class="fragment">
+<p><strong>Goal:</strong> Reproducible, collaborative, and maintainable Data Science.</p>
+</div>
+<aside class="notes">
+<p><strong>Key message:</strong> Government Data Science requires reproducible and auditable development.</p>
+<p><strong>Examples:</strong> - <strong>R/Python:</strong> Develop a diabetes risk prediction model. - <strong>SQL:</strong> Extract and transform data from a warehouse. - <strong>Git:</strong> Track changes to model code and enable peer review. - <strong>CI/CD:</strong> Automatically test code and deploy approved updates. - <strong>Posit/Jupyter:</strong> Provide collaborative environments for analysis.</p>
+<p><strong>Government context:</strong> Version control and deployment approvals support accountability and traceability.</p>
+<p><strong>Important:</strong> Sensitive data, credentials, and confidential outputs should not be committed to source-code repositories.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="data-warehousing-compute-platforms" class="slide level2">
+<h2>Data Warehousing &amp; Compute Platforms</h2>
+<ul>
+<li class="fragment"><strong>Cloud warehouses / lakehouses:</strong> Snowflake, Databricks, Microsoft Fabric, AWS.</li>
+<li class="fragment"><strong>Secure research environments:</strong> Stats NZ Data Labs and other approved environments.</li>
+<li class="fragment"><strong>Cloud / Hybrid Infrastructure:</strong> Balance <strong>scalability, cost, security, and data sovereignty</strong>.</li>
+</ul>
+<div style="display:flex; justify-content:space-around; align-items:center; margin-top:0.8em;">
+<p><img src="../logo/snowflake.svg" style="height:66px;"> <img src="../logo/databricks.svg" style="height:66px;"> <img src="../logo/microsoft-fabric.svg" style="height:66px;"> <img src="../logo/aws.svg" style="height:66px;"></p>
+</div>
+<div class="fragment">
+<p><strong>Goal:</strong> Secure, scalable, and governed data processing.</p>
+</div>
+<aside class="notes">
+<p><strong>Key message:</strong> Data platforms provide the storage and computing infrastructure for analytics and AI.</p>
+<p><strong>Examples:</strong> - <strong>Snowflake:</strong> Centralise administrative datasets and support SQL-based analytics. - <strong>Databricks:</strong> Process large datasets and develop machine learning pipelines. - <strong>Microsoft Fabric:</strong> Integrate data engineering, analytics, and reporting. - <strong>AWS:</strong> Provide cloud infrastructure for data storage, computing, and AI services. - <strong>Stats NZ Data Labs:</strong> Enable approved research using restricted linked data.</p>
+<p><strong>Government considerations:</strong> Data classification, access control, cost, security, and Māori Data Sovereignty should inform platform decisions.</p>
+<p><strong>Important:</strong> Cloud hosting alone does not guarantee privacy compliance or data sovereignty.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="analytics-applications-reporting" class="slide level2">
+<h2>Analytics, Applications &amp; Reporting</h2>
+<ul>
+<li class="fragment"><strong>Analysis &amp; AI:</strong> R, Python, SQL.</li>
+<li class="fragment"><strong>Interactive Applications:</strong> Shiny (R), Dash (Python).</li>
+<li class="fragment"><strong>Enterprise Reporting:</strong> Power BI.</li>
+<li class="fragment"><strong>Collaboration &amp; Publishing:</strong> Posit tools and approved deployment services.</li>
+</ul>
+<div class="fragment">
+<p><strong>Goal:</strong> Turn analysis into accessible, actionable insights.</p>
+</div>
+<aside class="notes">
+<p><strong>Key message:</strong> Data Science creates value when analytical results are accessible to appropriate users.</p>
+<p><strong>Examples:</strong> - <strong>Power BI:</strong> An executive dashboard monitors employment trends and programme outcomes. - <strong>Shiny:</strong> An interactive application allows analysts to explore health inequalities across regions. - <strong>Dash:</strong> A Python-based application presents model predictions and explanations. - <strong>Posit:</strong> Supports developing and publishing R/Python applications in approved environments.</p>
+<p><strong>Government context:</strong> Dashboards and applications require appropriate access controls, quality assurance, and ongoing maintenance.</p>
+<p><strong>Important:</strong> Aggregated dashboards can still present disclosure risks, particularly for small population groups.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="putting-it-all-together" class="slide level2">
+<h2>Putting It All Together</h2>
+<p><strong>A typical government Data Science workflow:</strong></p>
+<p><strong>Data → Development → Modelling → Deployment → Decision Support</strong></p>
+<ul>
+<li class="fragment"><strong>Data:</strong> Snowflake, Databricks, secure research environments.</li>
+<li class="fragment"><strong>Development:</strong> SQL, R/Python, Git, CI/CD.</li>
+<li class="fragment"><strong>Modelling:</strong> Predictive AI, synthetic data, XAI.</li>
+<li class="fragment"><strong>Delivery:</strong> Power BI, Shiny, Dash, APIs.</li>
+</ul>
+<div class="fragment">
+<p><strong>Governance applies throughout — from data access to deployment and monitoring.</strong></p>
+</div>
+<aside class="notes">
+<p><strong>Key message:</strong> Platforms connect data, algorithms, and decision-makers within a governed workflow.</p>
+<p><strong>Example — Government health analytics:</strong> 1. <strong>Data:</strong> Access approved health and socioeconomic records. 2. <strong>Development:</strong> Use SQL and Python/R to prepare data and build models. 3. <strong>Modelling:</strong> Develop a diabetes risk model and use XAI to examine predictions. 4. <strong>Deployment:</strong> Publish approved aggregate insights through Power BI or Shiny. 5. <strong>Monitoring:</strong> Review data quality, model performance, access, and security.</p>
+<p><strong>Important:</strong> Restricted IDI microdata and derived outputs must remain within approved environments unless authorised for release. A dashboard must not directly expose unapproved IDI information.</p>
+<p><strong>Takeaway:</strong> There is no universal technology stack. Platform selection depends on security, governance, skills, cost, and existing agency infrastructure.</p>
+<p><strong>Workshop conclusion:</strong> Governance establishes accountability, Data provides evidence, Algorithms create analytical capabilities, and Platforms enable responsible delivery.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section class="slide level2">
+
+</section></section>
+<section>
+<section id="group-project-dementia-research-plan" class="title-slide slide level1 center">
+<h1>Group Project: Dementia Research Plan</h1>
+
+</section>
+<section id="design-a-responsible-data-science-project" class="slide level2">
+<h2>Design a Responsible Data Science Project</h2>
+<div class="activity">
+<p><strong>In groups of 4–5 (10 min):</strong> Develop a one-page dementia research plan using the four components.</p>
+</div>
+<table class="caption-top">
+<colgroup>
+<col style="width: 36%">
+<col style="width: 63%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>Component</strong></th>
+<th style="text-align: left;"><strong>Key Questions</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Governance</strong></td>
+<td style="text-align: left;">What approvals, ethical considerations, and Māori data governance are needed?</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Data</strong></td>
+<td style="text-align: left;">Which datasets? How will dementia be identified and data quality assessed?</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Algorithm</strong></td>
+<td style="text-align: left;">Prediction or causal analysis? Which methods?</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Platform</strong></td>
+<td style="text-align: left;">Which tools and secure environments? How will results be released?</td>
+</tr>
+</tbody>
+</table>
+<div class="fragment">
+<p><strong>Group sharing (10 min):</strong> Each group presents its <strong>proposed approach or biggest challenge</strong> (≤2 min).</p>
+</div>
+<aside class="notes">
+<p><strong>Purpose:</strong> Apply Governance, Data, Algorithm, and Platform to a realistic NZ public sector research problem.</p>
+<p><strong>Example — Predicting dementia risk:</strong> - <strong>Governance:</strong> Consider ethics approval, Stats NZ access requirements, and meaningful Māori involvement from project design. - <strong>Data:</strong> Link hospital, pharmaceutical, demographic, and socioeconomic records in the IDI. Consider incomplete dementia identification and missing primary care diagnoses. - <strong>Algorithm:</strong> Develop a risk prediction model; use XAI to examine important predictors. Consider synthetic data for development, subject to privacy evaluation. - <strong>Platform:</strong> Analyse restricted data in an approved secure environment. Release only confidentiality-checked outputs.</p>
+<p><strong>Facilitation:</strong> - Encourage groups to define a clear research question before choosing methods. - Ask whether their data and methods can actually answer that question. - Look for connections between governance requirements and technical decisions. - There is no single correct design; prioritise justification and feasibility.</p>
+<p><strong>Discussion prompt:</strong> What is the biggest barrier to delivering your proposed project responsibly?</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="qa" class="slide level2 center">
+<h2>Q&amp;A</h2>
+<h3 id="thank-you-any-questions">Thank you! Any questions?</h3>
+<div class="fragment">
+<p><strong>Have an innovative idea or interested in pursuing a PhD?</strong></p>
+<p>Let’s connect!</p>
+</div>
+<div class="fragment">
+<p><a href="mailto:Alex.Wang@vuw.ac.nz">Alex.Wang@vuw.ac.nz</a> · <a href="https://www.linkedin.com/in/coksvictoria/">LinkedIn</a> ·</p>
+</div>
+</section>
+<section id="useful-links-interactive-tools" class="slide level2" data-visibility="uncounted">
+<h2>Useful Links &amp; Interactive Tools</h2>
+<ul>
+<li class="fragment"><strong><a href="https://idisearch.terourou.org/">IDI Search App</a></strong> — Explore IDI datasets, variables, and metadata.</li>
+<li class="fragment"><strong><a href="https://www.stats.govt.nz/integrated-data/integrated-data-infrastructure/data-in-the-idi/">Stats NZ: Data in the IDI</a></strong> — Available data sources and access information.</li>
+<li class="fragment"><strong><a href="https://playground.scienxlab.org/">Synthetic Data Playground</a></strong> — Experiment with synthetic datasets and machine learning.</li>
+<li class="fragment"><strong><a href="https://pair-code.github.io/what-if-tool/">Google What-If Tool</a></strong> — Explore model behaviour, fairness, and counterfactuals.</li>
+<li class="fragment"><strong><a href="https://shap.readthedocs.io/">SHAP Documentation</a></strong> — Interactive examples of explainable AI.</li>
+</ul>
+<aside class="notes">
+<p>Encourage students to explore these resources after the workshop.</p>
+<ul>
+<li><strong>IDI Search:</strong> Useful for planning research before applying for IDI access.</li>
+<li><strong>Synthetic Data Playground:</strong> Demonstrates ML using generated datasets; it is not a dedicated tabular synthetic-data generator.</li>
+<li><strong>What-If Tool / SHAP:</strong> Help illustrate model interpretation and evaluation.</li>
+</ul>
+<p>These tools are intended for learning and exploration. Do not upload sensitive government or IDI data to public websites.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="further-reading" class="slide level2" data-visibility="uncounted">
+<h2>Further Reading</h2>
+<p><strong>Governance &amp; Data</strong> - Five Safes: <span class="citation" data-cites="desai2016five">Desai et al. (<a href="#/references" role="doc-biblioref" onclick="">2016</a>)</span> - Māori Data Sovereignty: <span class="citation" data-cites="kukutai2023maori">Kukutai et al. (<a href="#/references" role="doc-biblioref" onclick="">2023</a>)</span>; <span class="citation" data-cites="maori_data_sovereignty">Te Mana Raraunga (<a href="#/references" role="doc-biblioref" onclick="">2018</a>)</span> - Indigenous Data Governance: <span class="citation" data-cites="carroll2020care">Carroll et al. (<a href="#/references" role="doc-biblioref" onclick="">2020</a>)</span></p>
+<p><strong>Algorithms &amp; Responsible AI</strong> - Causal Inference: <span class="citation" data-cites="hernan2020causal">Hernán and Robins (<a href="#/references" role="doc-biblioref" onclick="">2020</a>)</span> - Interpretable Machine Learning: <span class="citation" data-cites="rudin2019stop">Rudin (<a href="#/references" role="doc-biblioref" onclick="">2019</a>)</span> - Synthetic Data in R: <span class="citation" data-cites="nowok2016synthpop">Nowok et al. (<a href="#/references" role="doc-biblioref" onclick="">2016</a>)</span></p>
+<aside class="notes">
+<p>These readings provide theoretical and practical foundations for the four workshop components.</p>
+<p><strong>Suggested starting points:</strong> - <strong>Desai et al.:</strong> Understanding the Five Safes framework. - <strong>Kukutai and Carroll et al.:</strong> Māori and Indigenous data governance. - <strong>Hernán and Robins:</strong> Distinguishing causal inference from prediction. - <strong>Rudin:</strong> The importance of interpretable models in high-stakes settings. - <strong>Nowok et al.:</strong> Practical synthetic data generation using R.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section></section>
+<section id="references" class="title-slide slide level1 smaller scrollable" data-visibility="uncounted">
+<h1>References</h1>
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-carroll2020care" class="csl-entry" role="listitem">
+Carroll, Stephanie Russo, Ibrahim Garba, Oscar L. Figueroa-Rodríguez, et al. 2020. <span>“The <span>CARE</span> Principles for Indigenous Data Governance.”</span> <em>Data Science Journal</em> 19 (1): 43. <a href="https://doi.org/10.5334/dsj-2020-043">https://doi.org/10.5334/dsj-2020-043</a>.
+</div>
+<div id="ref-desai2016five" class="csl-entry" role="listitem">
+Desai, Tanvi, Felix Ritchie, and Richard Welpton. 2016. <em>Five Safes: Designing Data Access for Research</em>. No. 1601. Bristol Economics Working Papers. University of the West of England, Bristol. <a href="https://uwe-repository.worktribe.com/output/914745">https://uwe-repository.worktribe.com/output/914745</a>.
+</div>
+<div id="ref-hernan2020causal" class="csl-entry" role="listitem">
+Hernán, Miguel A., and James M. Robins. 2020. <em>Causal Inference: What If</em>. Chapman &amp; Hall/CRC. <a href="https://miguelhernan.org/whatifbook">https://miguelhernan.org/whatifbook</a>.
+</div>
+<div id="ref-kukutai2023maori" class="csl-entry" role="listitem">
+Kukutai, Tahu, Sereana Cassim, V. Clark, et al. 2023. <em><span class="nocase">M<span class="nocase">ā</span>ori</span> Data Sovereignty and Privacy</em>. Tikanga in Technology Discussion Paper. Te Ngira Institute for Population Research. <a href="https://doi.org/10.15663/j21.35481">https://doi.org/10.15663/j21.35481</a>.
+</div>
+<div id="ref-milne2022longitudinal" class="csl-entry" role="listitem">
+Milne, Barry J. 2022. <span>“Longitudinal Research in <span>Aotearoa New Zealand</span> Using the Integrated Data Infrastructure: A Review.”</span> <em>Journal of the Royal Society of New Zealand</em> 52 (3): 301–12.
+</div>
+<div id="ref-milne2019data" class="csl-entry" role="listitem">
+Milne, BJ, J Atkinson, T Blakely, et al. 2019. <span>“Data Resource Profile: The <span>New Zealand</span> Integrated Data Infrastructure <span>(IDI)</span>.”</span> <em>International Journal of Epidemiology</em> 48 (3): 1027–27.
+</div>
+<div id="ref-privacyact2020" class="csl-entry" role="listitem">
+New Zealand Parliament. 2020. <span>“Privacy Act 2020.”</span> <a href="https://www.legislation.govt.nz/act/public/2020/0031/latest/LMS23223.html">https://www.legislation.govt.nz/act/public/2020/0031/latest/LMS23223.html</a>.
+</div>
+<div id="ref-nowok2016synthpop" class="csl-entry" role="listitem">
+Nowok, Beata, Gillian M. Raab, and Chris Dibben. 2016. <span>“<span class="nocase">synthpop</span>: Bespoke Creation of Synthetic Data in <span>R</span>.”</span> <em>Journal of Statistical Software</em> 74 (11): 1–26. <a href="https://doi.org/10.18637/jss.v074.i11">https://doi.org/10.18637/jss.v074.i11</a>.
+</div>
+<div id="ref-raghunathan2021synthetic" class="csl-entry" role="listitem">
+Raghunathan, Trivellore E. 2021. <span>“Synthetic Data.”</span> <em>Annual Review of Statistics and Its Application</em> 8.
+</div>
+<div id="ref-rudin2019stop" class="csl-entry" role="listitem">
+Rudin, Cynthia. 2019. <span>“Stop Explaining Black Box Machine Learning Models for High Stakes Decisions and Use Interpretable Models Instead.”</span> <em>Nature Machine Intelligence</em> 1 (5): 206–15. <a href="https://doi.org/10.1038/s42256-019-0048-x">https://doi.org/10.1038/s42256-019-0048-x</a>.
+</div>
+<div id="ref-stats_nz_idi" class="csl-entry" role="listitem">
+Statistics New Zealand. 2025. <span>“Integrated Data Infrastructure (IDI).”</span> <a href="https://www.stats.govt.nz/integrated-data/integrated-data-infrastructure/">https://www.stats.govt.nz/integrated-data/integrated-data-infrastructure/</a>.
+</div>
+<div id="ref-maori_data_sovereignty" class="csl-entry" role="listitem">
+Te Mana Raraunga. 2018. <em>Principles of <span class="nocase">M<span class="nocase">ā</span>ori</span> Data Sovereignty</em>. Brief No. 1. Te Mana Raraunga. <a href="https://www.temanararaunga.maori.nz/s/TMR-Maori-Data-Sovereignty-Principles-Oct-2018.pdf">https://www.temanararaunga.maori.nz/s/TMR-Maori-Data-Sovereignty-Principles-Oct-2018.pdf</a>.
+</div>
+<div id="ref-wang2024iccae" class="csl-entry" role="listitem">
+Wang, Alex X, Colin R Simpson, and Binh P Nguyen. 2024. <span>“Enhancing Data Governance Through Data-Centric AI: Case Study in New Zealand Government Sector.”</span> <em>2024 16th International Conference on Computer and Automation Engineering (ICCAE)</em>, 64–69.
+</div>
+<div id="ref-watts2025protecting" class="csl-entry" role="listitem">
+Watts, David, and Tahu Kukutai. 2025. <em>Protecting m<span>ā</span>ori Data: Can a Privacy Code of Practice Provide a Partial Solution?</em>
+</div>
+</div>
+
+</section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<p><img src="logo/VUW.png" class="slide-logo"></p>
+<div class="footer footer-default">
+
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="presentation_files/libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="presentation_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="presentation_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="presentation_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="presentation_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="presentation_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="presentation_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="presentation_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="presentation_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="presentation_files/libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'slide',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>

@@ -35,7 +35,6 @@ _render/
 **/*.quarto_ipynb
 /.quarto/
 
-*.html
 
 # Sensitive data / outputs
 figures/raw_data/
