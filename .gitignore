@@ -29,7 +29,7 @@ rsconnect/
 
 # Quarto
 _render/
-*_files/
+
 *_cache/
 *.nb.html
 **/*.quarto_ipynb
