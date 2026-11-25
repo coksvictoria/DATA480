@@ -16,30 +16,7 @@
 **Example:** A government AI project needs lawful data access, appropriate Māori data governance, model oversight, and secure infrastructure.
 :::
 
----
 
-## Why Privacy, Ethics & Data Sovereignty Matter
-
-- **Privacy** → Protects individuals from misuse of personal information.
-- **Ethics** → Promotes **fairness, respect, and responsible data use**.
-- **Māori Data Sovereignty** → Recognises **collective rights and Māori authority** over Māori data [@kukutai2023maori].
-
-::: {.fragment}
-**Together, they support trust, accountability, and responsible Data Science.**
-:::
-
-::: notes
-**Key message:** Legal compliance alone does not guarantee ethical or culturally appropriate data use.
-
-**Examples:**
-- **Privacy:** A researcher must have a lawful basis to access identifiable health records and protect them against unauthorised access.
-- **Ethics:** An AI model predicting welfare needs may reinforce existing inequalities if its training data reflects historical bias.
-- **Māori Data Sovereignty:** Research using Māori health data should consider Māori authority, governance, and collective benefit, even when individual privacy is protected.
-
-**Discussion:** Can a data science project be legally compliant but still cause harm?
-
-**Transition:** We begin with the legal foundation — New Zealand's Privacy Act 2020.
-:::
 
 ---
 
@@ -223,3 +200,27 @@ Even if individual records are protected and published findings are aggregated:
 :::
 
 
+---
+
+## Recap and Key Takeaways
+
+- **Privacy** → Protects individuals from misuse of personal information.
+- **Ethics** → Promotes **fairness, respect, and responsible data use**.
+- **Māori Data Sovereignty** → Recognises **collective rights and Māori authority** over Māori data [@kukutai2023maori].
+
+::: {.fragment}
+**Together, they support trust, accountability, and responsible Data Science.**
+:::
+
+::: notes
+**Key message:** Legal compliance alone does not guarantee ethical or culturally appropriate data use.
+
+**Examples:**
+- **Privacy:** A researcher must have a lawful basis to access identifiable health records and protect them against unauthorised access.
+- **Ethics:** An AI model predicting welfare needs may reinforce existing inequalities if its training data reflects historical bias.
+- **Māori Data Sovereignty:** Research using Māori health data should consider Māori authority, governance, and collective benefit, even when individual privacy is protected.
+
+**Discussion:** Can a data science project be legally compliant but still cause harm?
+
+**Transition:** We begin with the legal foundation — New Zealand's Privacy Act 2020.
+:::

@@ -20,18 +20,6 @@ execute:
 
 # Welcome {visibility="hidden"}
 
-## By the end of this workshop you can…
-
-- **Explain** how privacy law, Māori Data Sovereignty and data governance shape research with population data in Aotearoa NZ.
-- **Describe** what the IDI holds and how access works (Five Safes), and **critique** its limits: coverage, linkage error, timeliness.
-- **Distinguish** predictive from causal questions, and judge what synthetic data and XAI can and cannot do.
-- **Outline** the platform needs and constraints of a secure research project.
-- **Integrate** 1–4 into a defensible plan for a real research question.
-
-::: notes
-⏱ 2 min. Link to the course: this workshop feeds directly into the research-proposal skills assessed later. Say that the last 35 minutes is a synthesis task and that a worksheet will be filled in progressively.
-:::
-
 
 ## The framework we will use all day
 
@@ -44,6 +32,17 @@ Public sector data science practice = **Data + Algorithm + Platform**, underpinn
 - **Wrap-up:** Q&A
 
 
+## By the end of this workshop you can…
+
+- **Explain** how privacy law, Māori Data Sovereignty and data governance shape research with population data in Aotearoa NZ.
+- **Describe** what the IDI holds and how access works (Five Safes), and **critique** its limits: coverage, linkage error, timeliness.
+- **Distinguish** predictive from causal questions, and judge what synthetic data and XAI can and cannot do.
+- **Outline** the platform needs and constraints of a secure research project.
+- **Integrate** 1–4 into a defensible plan for a real research question.
+
+::: notes
+⏱ 2 min. Link to the course: this workshop feeds directly into the research-proposal skills assessed later. Explain that the final group activity will bring Governance, Data, Algorithm, and Platform together in a short research plan.
+:::
 
 ## A Motivating Research Question
 
@@ -54,9 +53,12 @@ Public sector data science practice = **Data + Algorithm + Platform**, underpinn
 
 
 ::: {.checkpoint .fragment}
-**Project worksheet.** After each module you will spend ~2 minutes adding to a worksheet for this question. At the end, it becomes the skeleton of your group's project plan.
+**Keep these four components in mind:**
 
-Handout: `handout/worksheet.html`
+- **Governance** — What approvals and Māori data governance are needed?
+- **Data** — Which sources, and how complete and reliable are they?
+- **Algorithm** — Are we predicting risk or estimating causes?
+- **Platform** — What secure tools and environment will we need?
 
 :::
 
@@ -90,6 +92,8 @@ Suggested: put the framework diagram on screen. Ask students to think about whic
 
 ::: {.activity}
 **In groups of 4–5 (10 min):** Develop a one-page dementia research plan using the four components.
+
+*What are the emerging risk and protective factors for dementia?*
 :::
 
 | **Component** | **Key Questions** |
